@@ -1,4 +1,5 @@
 // import Images from "../../assets/images/Images"
+import { Grow } from "../../components/Landing/Grow/Grow"
 import HeroSlider from "../../components/Landing/HeroSliderDetails/HeroSlider"
 import { Onboarding } from "../../components/Landing/LandingOnboarding/Onboarding"
 
@@ -7,6 +8,7 @@ const Landing = () => {
     <div>
       <HeroSlider />
       <Onboarding />
+      <Grow />
     </div>
   )
 }

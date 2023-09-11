@@ -1,16 +1,16 @@
-import React from 'react'
+// import React from 'react'
 // import { Accordion, AccordionDetails, AccordionSummary, Typography } from '@mui/material'
-import {
-  PlusIcon
-} from '@heroicons/react/24/outline'
+// import {
+//   PlusIcon
+// } from '@heroicons/react/24/outline'
 
 export const About = () => {
-  const [expanded, setExpanded] = React.useState<string | false>(false);
+  // const [expanded, setExpanded] = React.useState<string | false>(false);
 
-  const handleChange =
-    (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
-      setExpanded(isExpanded ? panel : false);
-    };
+  // const handleChange =
+  //   (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
+  //     setExpanded(isExpanded ? panel : false);
+  //   };
 
   return (
     <div>
