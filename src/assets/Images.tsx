@@ -7,6 +7,14 @@ const Images = {
     'hybrid': new URL('./images/hybrid-savings.jpg', import.meta.url).href,
     'corporate-current': new URL('./images/corporate-current.jpg', import.meta.url).href,
     'enterprise-loan': new URL('./images/enterprise-loan.jpg', import.meta.url).href,
+
+    'step1-1': new URL('./images/step1-1.png', import.meta.url).href,
+    'step1-2': new URL('./images/step1-2.png', import.meta.url).href,
+    'step2': new URL('./images/step2.png', import.meta.url).href,
+    'step3': new URL('./images/step3.png', import.meta.url).href,
+    'step4': new URL('./images/step4.png', import.meta.url).href,
+
+    'growth': new URL('./images/growth.png', import.meta.url).href,
 }
 
 export const Icons = {

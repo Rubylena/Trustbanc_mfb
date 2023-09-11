@@ -40,7 +40,7 @@ export default function Header() {
             <nav className=" tw-flex tw-items-center tw-justify-between tw-p-6 lg:tw-px-8" aria-label="Global">
                 <div className="tw-flex lg:tw-flex-1">
                     <a href="/" className="-tw-m-1.5 tw-p-1.5">
-                        <span className="tw-sr-only">Your Company</span>
+                        <span className="tw-sr-only">TrustBanc MFB</span>
                         <img className="tw-h-8 tw-w-auto" src={Images.logo} alt="logo" />
                     </a>
                 </div>
@@ -54,7 +54,7 @@ export default function Header() {
                         <Bars3Icon className="tw-h-6 tw-w-6" aria-hidden="true" />
                     </button>
                 </div>
-                <Popover.Group className="tw-hidden lg:tw-flex lg:tw-gap-x-12">
+                <Popover.Group className="tw-hidden lg:tw-flex tw-items-center lg:tw-gap-x-12">
                     <Popover className="tw-relative">
                         <Popover.Button className="tw-flex tw-items-center tw-gap-x-1 tw-text-sm tw-font-medium tw-leading-6 tw-text-gray-900 tw-border-0 tw-ring-0 focus:tw-outline-0">
                             Features
@@ -160,11 +160,11 @@ export default function Header() {
                         </Transition>
                     </Popover>
 
-                    {/* <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                        <a href="#" className="text-sm font-medium leading-6 text-gray-900">
-                            Log in <span aria-hidden="true">&rarr;</span>
+                    <div className='tw-bg-blue tw-text-center py-2 tw-rounded-lg'>
+                        <a href="https://app.trustbancgroup.com/accounts/login/" className="tw-text-sm tw-font-medium px-3 py-2 tw-text-white">
+                            Internet Banking
                         </a>
-                    </div> */}
+                    </div>
                 </Popover.Group>
             </nav>
             <Dialog as="div" className="lg:tw-tw-hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -172,7 +172,7 @@ export default function Header() {
                 <Dialog.Panel className="tw-fixed tw-inset-y-0 tw-right-0 tw-z-10 tw-w-full tw-overflow-y-auto tw-bg-white tw-px-6 tw-py-6 sm:tw-max-w-sm ">
                     <div className="tw-flex tw-items-center tw-justify-between">
                         <a href="/" className="-tw-m-1.5 tw-p-1.5">
-                            <span className="tw-sr-only">Your Company</span>
+                            <span className="tw-sr-only">TrustBanc MFB</span>
                             <img
                                 className="tw-h-8 tw-w-auto"
                                 src={Images.logo}
@@ -243,7 +243,7 @@ export default function Header() {
                                     )}
                                 </Disclosure>
 
-                                <Disclosure as="div" className="-tw-mx">
+                                <Disclosure as="div" className="-tw-mx-3">
                                     {({ open }) => (
                                         <>
                                             <Disclosure.Button className="tw-flex tw-w-full tw-items-center tw-justify-between tw-rounded-lg tw-py-2 tw-pl-3 tw-pr-3.5 tw-text-base tw-font-medium tw-leading-7 tw-text-gray-900 hover:tw-bg-gray-50">
@@ -268,6 +268,12 @@ export default function Header() {
                                         </>
                                     )}
                                 </Disclosure>
+
+                                <div className='tw-bg-blue tw-text-center py-2 tw-rounded-lg'>
+                                    <a href="https://app.trustbancgroup.com/accounts/login/" className="tw-text-sm tw-font-medium px-3 py-2 tw-text-white">
+                                        Internet Banking
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>

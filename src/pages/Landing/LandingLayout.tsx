@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom'
 
 const LandingLayout = () => {
   return (
-    <div>
+    <div className='tw-flex tw-flex-col tw-justify-between tw-min-h-screen'>
       <Header />
       <Outlet />
       <Footer />

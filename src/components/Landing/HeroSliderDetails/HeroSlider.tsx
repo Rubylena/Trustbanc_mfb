@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import Images, { Icons } from '../../assets/Images';
+import Images, { Icons } from '../../../assets/Images';
 import { Carousel, Row, Col } from 'react-bootstrap';
 
 const HeroSlider = () => {
@@ -30,28 +30,34 @@ const HeroSlider = () => {
                         <h3 className='tw-text-blue tw-font-semibold tw-text-sm sm:tw-text-3xl md:tw-text-5xl'>Digital banking services that suits you and your lifestyle</h3>
                         <p className='tw-text-xs sm:tw-text-sm md:tw-text-md tw-hidden sm:tw-block'>Enjoy the beauty of digital banking with Prime by TrustBanc. Save, invest, pay bills and do more from your comfort zone.</p>
                         <p className='tw-text-xs sm:tw-text-sm md:tw-text-md tw-block sm:tw-hidden'>Save, invest, pay bills and do more from your comfort zone.</p>
-                        <div className='tw-flex tw-gap-2 flex-wrap tw-flex-row tw-justify-end tw-text-left tw-text-white'>
-                            <div className='tw-bg-black tw-flex tw-gap-1 tw-items-center tw-rounded-lg tw-py-1 tw-px-2'>
-                                <div>
-                                    <img src={Icons.apple} alt='apple' />
+                        <div className='tw-flex tw-gap-2 flex-wrap tw-flex-row tw-justify-end tw-text-left tw-text-white tw-cursor-pointer'>
+                            <a href='https://apps.apple.com/gb/app/prime-by-trustbanc/id1552300596' className='tw-text-white ' target='_blank'>
+                                <div className='tw-bg-black tw-flex tw-gap-1 tw-items-center tw-rounded-lg tw-py-1 tw-px-2'>
+                                    <div>
+                                        <img src={Icons.apple} alt='apple' />
+                                    </div>
+                                    <div className='tw-hidden sm:tw-block'>
+                                        <p className='tw-text-[0.5rem] md:tw-text-xs'>Download on the</p>
+                                        <p className='tw-text-xs sm:tw-text-sm md:tw-font-semibold'>App Store</p>
+                                    </div>
                                 </div>
-                                <div className='tw-hidden sm:tw-block'>
-                                    <p className='tw-text-[0.5rem] md:tw-text-xs'>Download on the</p>
-                                    <p className='tw-text-xs sm:tw-text-sm md:tw-font-semibold'>App Store</p>
+                            </a>
+
+                            <a href='https://play.google.com/store/apps/details?id=com.cwg.trustbanc&pli=1' className='tw-text-white ' target='_blank'>
+                                <div className='tw-bg-black tw-flex tw-items-center tw-gap-1 tw-py-1 tw-px-2 tw-rounded-lg'>
+                                    <div>
+                                        <img src={Icons.play} alt='play store' />
+                                    </div>
+                                    <div className='tw-hidden sm:tw-block'>
+                                        <p className='tw-text-[0.5rem] md:tw-text-xs'>Get it on</p>
+                                        <p className='tw-text-xs sm:tw-text-sm md:tw-font-semibold'>Google Play</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className='tw-bg-black tw-flex tw-items-center tw-gap-1 tw-py-1 tw-px-2 tw-rounded-lg'>
-                                <div>
-                                    <img src={Icons.play} alt='play store' />
-                                </div>
-                                <div className='tw-hidden sm:tw-block'>
-                                    <p className='tw-text-[0.5rem] md:tw-text-xs'>Get it on</p>
-                                    <p className='tw-text-xs sm:tw-text-sm md:tw-font-semibold'>Google Play</p>
-                                </div>
-                            </div>
+                            </a>
+
                             <div className='tw-bg-blue tw-flex tw-items-center tw-gap-1 tw-py-1 tw-px-2 tw-rounded-lg'>
                                 <img src={Icons.globe} alt='website' />
-                                <p className='tw-text-xs md:tw-text-sm tw-font-semibold tw-hidden sm:tw-block'>Website</p>
+                                <p className='tw-text-xs md:tw-text-sm tw-font-semibold tw-hidden sm:tw-block'><a href='https://app.trustbancgroup.com/accounts/login/' target='_blank' className='tw-text-white' >Website</a></p>
                             </div>
                         </div>
                         <Link to='primeApp' className='tw-flex tw-gap-1 tw-items-center tw-justify-end tw-text-xs sm:tw-text-sm md:tw-text-md tw-text-blue tw-font-semibold'>Learn More <img src={Images.forwardBtn} alt='know more' /></Link>
@@ -100,13 +106,13 @@ const HeroSlider = () => {
                         <img src={Images['enterprise-loan']} alt='swift loan' className='tw-w-full tw-h-full' />
                     </Col>
                     <Col className='tw-text-right md:col-5 tw-flex tw-flex-col tw-gap-2 sm:tw-gap-5 p-0'>
-                        <h3 className='tw-text-blue tw-font-semibold tw-text-sm sm:tw-text-3xl md:tw-text-5xl'>Open a TrustBanc MfB current account with full and gain access to the world of convenience</h3>
-                        <p className='tw-text-xs sm:tw-text-sm md:tw-text-md tw-hidden sm:tw-block'>This is a product designed for micro and small business entrepreneurs with existing businesses requiring increase in working capital.</p>
+                        <h3 className='tw-text-blue tw-font-semibold tw-text-sm sm:tw-text-3xl md:tw-text-5xl'>Break limits with our Enterprise Loan</h3>
+                        <p className='tw-text-xs sm:tw-text-sm md:tw-text-md'>This is a product designed for micro and small business entrepreneurs with existing businesses requiring increase in working capital.</p>
                         <Link to='enterprise-loan' className='tw-flex tw-gap-1 tw-items-center tw-justify-end tw-text-xs sm:tw-text-sm md:tw-text-md tw-text-blue tw-font-semibold'>Learn More <img src={Images.forwardBtn} alt='know more' /></Link>
                     </Col>
                 </Row>
             </Carousel.Item>
-        </Carousel>
+        </Carousel >
     )
 }
 
