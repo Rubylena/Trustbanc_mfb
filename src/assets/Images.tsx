@@ -15,6 +15,13 @@ const Images = {
     'step4': new URL('./images/step4.png', import.meta.url).href,
 
     'growth': new URL('./images/growth.png', import.meta.url).href,
+
+    'tel': new URL('./icons/tel.png', import.meta.url).href,
+    'linkedin': new URL('./icons/linkedin.png', import.meta.url).href,
+    'facebook': new URL('./icons/facebook.png', import.meta.url).href,
+    'twitter': new URL('./icons/twitter.png', import.meta.url).href,
+    'instagram': new URL('./icons/Ingramgram.png', import.meta.url).href,
+    'mail': new URL('./icons/mail.png', import.meta.url).href,
 }
 
 export const Icons = {
