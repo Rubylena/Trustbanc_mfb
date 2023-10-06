@@ -1,0 +1,27 @@
+.contact-us-left h2 {
+  font-size: 2.138rem;
+  font-weight: 600;
+}
+
+.contact-us-right h2 {
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+.contact-us-right p {
+  margin: 0;
+}
+
+.contact-us-right > div:nth-last-child(-n + 2) p:last-child {
+  font-size: 0.75rem;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-us-left h2 {
+    font-size: 1.138rem;
+  }
+
+  .contact-us-right h2 {
+    font-size: 1.138rem;
+  }
+}

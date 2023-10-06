@@ -1,26 +1,27 @@
 import { Button, Col, Container, Form, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import Images from '../../assets/Images'
+import './landingRemainder.scss'
 
 export const LandingRemainder = () => {
     return (
         <div>
             <section className="financial-freedom">
                 <Container fluid
-                    style={{ background: "linear-gradient(270deg, #83460F 24.27%, #D07F31 79.51%)" }}
+                    style={{ background: "linear-gradient(90deg, #83460F 24.27%, #D07F31 79.51%)" }}
                 >
                     <Row className="gap-3 justify-content-between align-items-center call-us mx-4 py-4 ">
-                        <Col sm md={7} className="text-white">
+                        <Col sm md={5} className="text-white">
                             <h3>
                                 Are you in need of a quick loan? Get in touch with us today.
                             </h3>
                         </Col>
-                        <Col sm md={4} className="d-flex justify-content-end">
+                        <Col sm md={2} className="d-flex justify-content-end">
                             <Button
                                 variant="light"
                                 className="d-flex gap-2 align-items-center justify-content-center fw-medium w-75"
                             >
-                                <a href="tel:07004446147">
+                                <a href="quick-loans" className='tw-text-blue'>
                                     <span>Apply now</span>
                                 </a>
                             </Button>
@@ -43,84 +44,68 @@ export const LandingRemainder = () => {
                         <Col sm md={9}>
                             <Row>
                                 <Col>
-                                    <ul>
+                                    <ul >
+                                        Features
                                         {" "}
-                                        Our Services
                                         <li>
-                                            <a href="/services/Stock-Broking">Stock-Broking</a>
+                                            <a href="hybrid-savings">Hybrid Savings</a>
                                         </li>
                                         <li>
-                                            <a href="/services/Shares and Bonds">
-                                                Shares and Bonds
+                                            <a href="fixed-deposits">
+                                                Fixed Deposit
                                             </a>
                                         </li>
                                         <li>
-                                            <Link to="/services/Investment Advisory">
-                                                Equities Trading
+                                            <Link to="loan-calculator">
+                                                Loan Calculator
                                             </Link>
                                         </li>
                                         <li>
-                                            <a href="/services/Investment Advisory">
-                                                Investment Advisory
+                                            <a href="primeApp">
+                                                Prime by TrustBanc
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="/services/Research">Research</a>
+                                            <a href="quick-loans">Quick Loans</a>
                                         </li>
                                         <li>
-                                            <a href="/services/Wealth Tracking">Wealth Tracking</a>
+                                            <a href="enterprise-loan">Enterprise Loan</a>
                                         </li>
                                         <li>
-                                            <a href="/services/Financial Advisory">
-                                                Financial Advisory
+                                            <a href="corporate-current">Corporate Current</a>
+                                        </li>
+                                    </ul>
+                                </Col>
+                                <Col>
+                                    <ul >
+                                        Company
+                                        {" "}
+                                        <li>
+                                            <a href="about">About us</a>
+                                        </li>
+                                        <li>
+                                            <a href="about/our-board">
+                                                Our Board
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="/services/Portfolio Management">
-                                                Portfolio Management
+                                            <Link to="about/our-team">
+                                                Our Team
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <a href="about/vision&mission">
+                                                Vision & Mission
                                             </a>
                                         </li>
                                     </ul>
                                 </Col>
                                 <Col>
-                                    <ul>
+                                    <ul >
+                                        Help
                                         {" "}
-                                        Downloads
                                         <li>
-                                            <a
-                                                href="https://trustbanccapital.com/uploads/2023/07/Individual-Account-Opening-Form-Asset-TrustBanc-Capital.pdf"
-                                                target="_blank"
-                                                rel="noreferrer"
-                                            >
-                                                Individual Account Opening Form
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="https://trustbanccapital.com/uploads/2023/07/Corporate-Account-Opening-Form-TrustBanc-Capital.pdf"
-                                                target="_blank"
-                                                rel="noreferrer"
-                                            >
-                                                Corporate Account Opening Form
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="https://trustbanccapital.com/uploads/2023/07/Best-Execution-Policy_TrustBanc-Capital_2021-1.pdf"
-                                                target="_blank"
-                                                rel="noreferrer"
-                                            >
-                                                Best Execution Policy
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="https://trustbanccapital.com/uploads/2023/07/TrustBanc-Complaints-Management-Policy_Updated-2021-1.pdf"
-                                                target="_blank"
-                                                rel="noreferrer"
-                                            >
-                                                TrustBanc Complaints Management Policy
-                                            </a>
+                                            <a href="contact">Contact us</a>
                                         </li>
                                     </ul>
                                 </Col>
@@ -134,7 +119,7 @@ export const LandingRemainder = () => {
                                                 target="_blank"
                                                 rel="noreferrer"
                                             >
-                                                TrustBanc Financial Group
+                                                TrustBanc Holdings
                                             </a>
                                         </li>
                                         <li>
@@ -144,6 +129,15 @@ export const LandingRemainder = () => {
                                                 rel="noreferrer"
                                             >
                                                 TrustBanc Asset Management Limited
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="https://trustbanccapital.com/"
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
+                                                TrustBanc Capital Management Limited
                                             </a>
                                         </li>
                                         <li>
@@ -175,8 +169,8 @@ export const LandingRemainder = () => {
 
             <section id="branches" className="mb-5">
                 <Container fluid>
-                    <Row className="gap-3 flex-wrap justify-content-sm-center">
-                        <Col className=" flex-column gap-5">
+                    <Row className="gap-4 flex-wrap justify-content-sm-center">
+                        <Col className='col-12 col-sm-4'>
                             <ul>
                                 HEAD OFFICE
                                 <li>
@@ -235,8 +229,8 @@ export const LandingRemainder = () => {
                                 </li>
                             </ul>
                         </Col>
-                        <Col className=" col-md-3 tweet">
-                            <h5>RECENT TWEET</h5>
+                        <Col className=" col-6 col-sm-3 tweet">
+                            <h5 className='mb-3'>RECENT TWEET</h5>
                             <div>
                                 <a
                                     className="twitter-timeline"
@@ -251,8 +245,8 @@ export const LandingRemainder = () => {
                             </div>
                         </Col>
 
-                        <Col className="subscribe-contact">
-                            <h5>SUBSCRIBE TO OUR NEWSLETTER</h5>
+                        <Col className="col-12 col-sm-4 subscribe-contact">
+                            <h5 className='mb-3'>SUBSCRIBE TO OUR NEWSLETTER</h5>
                             <div>
                                 <Form
                                     className="p-3"
@@ -293,7 +287,7 @@ export const LandingRemainder = () => {
                                     </Form.Group>
 
                                     <div className="d-flex flex-col gap-2 justify-content-end">
-                                        <Button variant="primary" type="submit">
+                                        <Button className="tw-bg-blue tw-border-blue" type="submit">
                                             Subscribe
                                         </Button>
                                     </div>

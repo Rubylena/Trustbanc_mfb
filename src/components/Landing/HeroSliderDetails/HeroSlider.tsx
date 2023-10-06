@@ -8,11 +8,12 @@ const HeroSlider = () => {
             controls={false}
             interval={3000}
             data-bs-theme="dark"
+            className='tw-mt-16 md:tw-mt-28'
         >
-            <Carousel.Item className='tw-mt-5 md:tw-mt-24 tw-px-6 md:tw-px-24 tw-h-[13rem] sm:tw-h-auto'>
+            <Carousel.Item className='tw-mt-5 md:tw-mt-24 lg:tw-mt-12 tw-px-6 md:tw-px-24 tw-h-[13rem] sm:tw-h-auto'>
                 <Row className="tw-items-center">
-                    <Col className='col-md-7 p-0 md:tw-h-[30rem] lg:tw-h-[35rem]'>
-                        <img src={Images['swift-loan']} alt='swift loan' className='tw-w-full h-full' />
+                    <Col className='col-md-7 3xl:tw-w-5/12 p-0 md:tw-h-[30rem] lg:tw-h-[40rem]'>
+                        <img src={Images['swift-loan']} alt='swift loan' className='tw-w-full h-full tw-object-contain' />
                     </Col>
                     <Col className='tw-text-right col-md-5 tw-flex tw-flex-col tw-gap-2 sm:tw-gap-5 p-0 sm:p-2'>
                         <h3 className='tw-text-blue tw-font-semibold tw-text-sm sm:tw-text-3xl md:tw-text-5xl'>N100,000 - N5M swift loan within 24hrs</h3>
@@ -23,8 +24,8 @@ const HeroSlider = () => {
             </Carousel.Item>
             <Carousel.Item className='tw-mt-5 md:tw-mt-24 tw-px-6 md:tw-px-24 tw-h-[13rem] sm:tw-h-auto'>
                 <Row className="tw-items-center">
-                    <Col className='col-md-7 p-0 md:tw-h-[30rem] lg:tw-h-[35rem]'>
-                        <img src={Images.prime} alt='prime app' className='tw-w-full tw-h-full' />
+                    <Col className='col-md-7 3xl:tw-w-5/12 p-0 md:tw-h-[30rem] lg:tw-h-[37rem]'>
+                        <img src={Images.prime} alt='prime app' className='tw-w-full tw-h-full tw-object-contain' />
                     </Col>
                     <Col className='tw-text-right col-8 col-md-5 tw-flex tw-flex-col tw-gap-2 sm:tw-gap-5 p-0'>
                         <h3 className='tw-text-blue tw-font-semibold tw-text-sm sm:tw-text-3xl md:tw-text-5xl'>Digital banking services that suits you and your lifestyle</h3>
@@ -66,7 +67,7 @@ const HeroSlider = () => {
             </Carousel.Item>
             <Carousel.Item className='tw-mt-5 md:tw-mt-24 tw-px-6 md:tw-px-24 tw-h-[13rem] sm:tw-h-auto'>
                 <Row className="tw-items-center">
-                    <Col className='col-md-7 p-0 md:tw-h-[30rem] lg:tw-h-[35rem]'>
+                    <Col className='col-md-7 3xl:tw-w-5/12 p-0 md:tw-h-[30rem] lg:tw-h-[37rem]'>
                         <img src={Images.fixed} alt='swift loan' className='tw-w-full tw-h-full' />
                     </Col>
                     <Col className='tw-text-right col-md-5 tw-flex tw-flex-col tw-gap-2 sm:tw-gap-5 p-0'>
@@ -78,7 +79,7 @@ const HeroSlider = () => {
             </Carousel.Item>
             <Carousel.Item className='tw-mt-5 md:tw-mt-24 tw-px-6 md:tw-px-24 tw-h-[13rem] sm:tw-h-auto'>
                 <Row className="tw-items-center">
-                    <Col className='col-md-7 p-0 md:tw-h-[30rem] lg:tw-h-[35rem]'>
+                    <Col className='col-md-7 3xl:tw-w-5/12 p-0 md:tw-h-[30rem] lg:tw-h-[37rem]'>
                         <img src={Images.hybrid} alt='swift loan' className='tw-w-full tw-h-full' />
                     </Col>
                     <Col className='tw-text-right col-md-5 tw-flex tw-flex-col tw-gap-2 sm:tw-gap-5 p-0'>
@@ -90,7 +91,7 @@ const HeroSlider = () => {
             </Carousel.Item>
             <Carousel.Item className='tw-mt-5 md:tw-mt-24 tw-px-6 md:tw-px-24 tw-h-[13rem] sm:tw-h-auto'>
                 <Row className="tw-items-center">
-                    <Col className='col-md-7 p-0 md:tw-h-[30rem] lg:tw-h-[35rem]'>
+                    <Col className='col-md-7 3xl:tw-w-5/12 p-0 md:tw-h-[30rem] lg:tw-h-[37rem]'>
                         <img src={Images['corporate-current']} alt='swift loan' className='tw-w-full tw-h-full ' />
                     </Col>
                     <Col className='tw-text-right col-md-5 tw-flex tw-flex-col tw-gap-2 sm:tw-gap-5 p-0'>
@@ -102,7 +103,7 @@ const HeroSlider = () => {
             </Carousel.Item>
             <Carousel.Item className='tw-mt-5 md:tw-mt-24 tw-px-6 md:tw-px-24 tw-h-[13rem] sm:tw-h-auto'>
                 <Row className="tw-items-center">
-                    <Col className='col-md-7 p-0 md:tw-h-[30rem] lg:tw-h-[35rem] p-2 lg:p-0'>
+                    <Col className='col-md-7 3xl:tw-w-5/12 p-0 md:tw-h-[30rem] lg:tw-h-[37rem] p-2 lg:p-0'>
                         <img src={Images['enterprise-loan']} alt='swift loan' className='tw-w-full tw-h-full' />
                     </Col>
                     <Col className='tw-text-right col-md-5 tw-flex tw-flex-col tw-gap-2 sm:tw-gap-5 p-0'>

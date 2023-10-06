@@ -22,12 +22,31 @@ const Images = {
     'twitter': new URL('./icons/twitter.png', import.meta.url).href,
     'instagram': new URL('./icons/Ingramgram.png', import.meta.url).href,
     'mail': new URL('./icons/mail.png', import.meta.url).href,
+
+    'olu': new URL('./images/olushola.png', import.meta.url).href,
+    'Ademola': new URL('./images/Ademola.png', import.meta.url).href,
+    'Abiola': new URL('./images/Abiola.png', import.meta.url).href,
+    'Akinseye': new URL('./images/Akinseye.png', import.meta.url).href,
+    'peter': new URL('./images/peter.png', import.meta.url).href,
+
+    'about': new URL('./images/about.png', import.meta.url).href,
+    'contact': new URL('./images/contact.png', import.meta.url).href,
+
+    'landline': new URL('./images/Landline-Phone.jpg', import.meta.url).href,
 }
 
 export const Icons = {
     'apple': new URL('./icons/apple.svg', import.meta.url).href,
     'globe': new URL('./icons/globe.svg', import.meta.url).href,
     'play': new URL('./icons/google-play.svg', import.meta.url).href,
+
+    'awards': new URL('./icons/awards.png', import.meta.url).href,
+    'care': new URL('./icons/care.png', import.meta.url).href,
+    'offers': new URL('./icons/loan-offers.png', import.meta.url).href,
+
+    'phone': new URL('./icons/phone.png', import.meta.url).href,
+    'map': new URL('./icons/map.png', import.meta.url).href,
+    'email': new URL('./icons/email.png', import.meta.url).href,
 }
 
 export default Images

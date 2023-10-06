@@ -1,15 +1,16 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Landing from './pages/Landing/Landing'
-import QuickLoans from './components/Landing/HeroSliderDetails/QuickLoans'
+import QuickLoans from './components/Landing/HeroSliderDetails/QuickLoans/QuickLoans'
 import { FixedDeposits } from './components/Landing/HeroSliderDetails/FixedDeposits'
 import { Prime } from './components/Landing/HeroSliderDetails/Prime'
 import { HybridSavings } from './components/Landing/HeroSliderDetails/HybridSavings'
 import { CorporateCurrent } from './components/Landing/HeroSliderDetails/CorporateCurrent'
 import { EnterpriseLoan } from './components/Landing/HeroSliderDetails/EnterpriseLoan'
 import LandingLayout from './pages/Landing/LandingLayout'
-import LoanCalculator from './pages/LoanCalculator/LoanCalculator'
 import { About } from './pages/About/About'
 import Contact from './pages/Contact/Contact'
+import { ApplyForm } from './components/Landing/HeroSliderDetails/QuickLoans/ApplyForm'
+import { LoanCalculator } from './pages/LoanCalculator/LoanCalculator'
 
 const router = createBrowserRouter([
   {
@@ -49,7 +50,15 @@ const router = createBrowserRouter([
         element: <LoanCalculator />
       },
       {
+        path: 'apply',
+        element: <ApplyForm />,
+      },
+      {
         path: 'about',
+        element: <About />
+      },
+      {
+        path: 'about/:tab',
         element: <About />
       },
       {

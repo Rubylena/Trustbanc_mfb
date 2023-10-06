@@ -32,6 +32,23 @@ p {
   margin-bottom: 0 !important;
 }
 
+button.accordion-button.collapsed {
+  background: linear-gradient(270deg, #043e7f 24.27%, #075cc7 79.51%);
+}
+
+button.accordion-button {
+  color: #ffffff !important;
+}
+
+button.accordion-button:not(.collapsed) {
+  background-color: #ababab !important;
+  color: #044188 !important;
+}
+
+.accordion-button.collapsed::after {
+  background-image: url("assets/icons/plus.png") !important;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

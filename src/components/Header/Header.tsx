@@ -8,24 +8,24 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import Images from "../../assets/Images"
 
 const features = [
-    { name: 'Quick Loans', href: 'quick-loans' },
-    { name: 'Fixed Deposit', href: 'fixed-deposits' },
-    { name: 'Enterprise Loan', href: 'enterprise-loan' },
-    { name: 'Corporate Current', href: 'corporate-current' },
-    { name: 'Hybrid Savings', href: 'hybrid-savings' },
-    { name: 'Prime by TrustBanc', href: 'primeApp' },
-    { name: 'Loan Calculator', href: 'loan-calculator' },
+    { name: 'Quick Loans', href: '/quick-loans' },
+    { name: 'Fixed Deposit', href: '/fixed-deposits' },
+    { name: 'Enterprise Loan', href: '/enterprise-loan' },
+    { name: 'Corporate Current', href: '/corporate-current' },
+    { name: 'Hybrid Savings', href: '/hybrid-savings' },
+    { name: 'Prime by TrustBanc', href: '/primeApp' },
+    { name: 'Loan Calculator', href: '/loan-calculator' },
 ]
 
 const company = [
-    { name: 'About Us', href: 'about' },
-    { name: 'Our Board', href: 'about#board-header' },
-    { name: 'Our Team', href: 'about#team-header' },
-    { name: 'Vision & Mission', href: 'about#vision-mission-header' },
+    { name: 'About Us', href: '/about' },
+    { name: 'Our Board', href: '/about/our-board' },
+    { name: 'Our Team', href: '/about/our-team' },
+    { name: 'Vision & Mission', href: '/about/vision&mission' },
 ]
 
 const help = [
-    { name: 'Contact Us', href: 'contact' }
+    { name: 'Contact Us', href: '/contact' }
 ]
 
 function classNames(...classes: string[]) {
@@ -36,8 +36,8 @@ export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
-        <header className="tw-bg-white tw-shadow md:tw-px-14">
-            <nav className=" tw-flex tw-items-center tw-justify-between tw-p-6 lg:tw-px-8" aria-label="Global">
+        <header className="tw-bg-white tw-bg-opacity-80 tw-z-10 tw-shadow md:tw-px-14 tw-fixed tw-w-full">
+            <nav className="tw-flex tw-items-center tw-justify-between tw-p-3 lg:tw-px-8 lg:tw-py-4" aria-label="Global">
                 <div className="tw-flex lg:tw-flex-1">
                     <a href="/" className="-tw-m-1.5 tw-p-1.5">
                         <span className="tw-sr-only">TrustBanc MFB</span>

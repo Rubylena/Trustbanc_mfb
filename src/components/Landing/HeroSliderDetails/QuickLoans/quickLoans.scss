@@ -1,0 +1,11 @@
+.list-tick li::before {
+  content: "\2713"; /* Unicode checkmark character */
+  color: #044188;
+  margin-right: 0.5rem;
+}
+
+.list-dash li::before {
+  content: "-"; /* Unicode checkmark character */
+  color: #044188;
+  margin-right: 0.5rem;
+}

@@ -9,10 +9,12 @@ export default {
       lg: "992px",
       xl: "1200px",
       "2xl": "1536px",
+      "3xl": "1800px",
     },
     extend: {
       colors: {
         blue: "#044188",
+        "light-blue": "#F6FAFF",
       },
     },
   },
