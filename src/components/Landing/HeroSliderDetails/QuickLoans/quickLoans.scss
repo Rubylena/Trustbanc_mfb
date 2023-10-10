@@ -4,8 +4,13 @@
   margin-right: 0.5rem;
 }
 
-.list-dash li::before {
+.list-dash > li::before {
   content: "-"; /* Unicode checkmark character */
   color: #044188;
   margin-right: 0.5rem;
+}
+
+.form-bg {
+  background: url("../../../../assets/images/apply-form-bg.png") no-repeat;
+  background-position: bottom right;
 }

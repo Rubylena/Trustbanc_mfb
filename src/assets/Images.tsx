@@ -33,6 +33,12 @@ const Images = {
     'contact': new URL('./images/contact.png', import.meta.url).href,
 
     'landline': new URL('./images/Landline-Phone.jpg', import.meta.url).href,
+
+    'apply-bg': new URL('./images/apply-form-bg.png', import.meta.url).href,
+
+    'prime-hero': new URL('./images/prime-hero.png', import.meta.url).href,
+    'prime-app-screen': new URL('./images/prime-app-screen.png', import.meta.url).href,
+    'download': new URL('./images/download-prime.png', import.meta.url).href,
 }
 
 export const Icons = {
@@ -47,6 +53,11 @@ export const Icons = {
     'phone': new URL('./icons/phone.png', import.meta.url).href,
     'map': new URL('./icons/map.png', import.meta.url).href,
     'email': new URL('./icons/email.png', import.meta.url).href,
+
+    'growth': new URL('./icons/Growth And Flag.png', import.meta.url).href,
+    'exchange': new URL('./icons/Exchange.png', import.meta.url).href,
+    'hand': new URL('./icons/Hand With Smartphone.png', import.meta.url).href,
+    'todo': new URL('./icons/To Do.png', import.meta.url).href,
 }
 
 export default Images

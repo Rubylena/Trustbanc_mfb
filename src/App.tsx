@@ -1,16 +1,16 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Landing from './pages/Landing/Landing'
-import QuickLoans from './components/Landing/HeroSliderDetails/QuickLoans/QuickLoans'
-import { FixedDeposits } from './components/Landing/HeroSliderDetails/FixedDeposits'
-import { Prime } from './components/Landing/HeroSliderDetails/Prime'
-import { HybridSavings } from './components/Landing/HeroSliderDetails/HybridSavings'
-import { CorporateCurrent } from './components/Landing/HeroSliderDetails/CorporateCurrent'
-import { EnterpriseLoan } from './components/Landing/HeroSliderDetails/EnterpriseLoan'
-import LandingLayout from './pages/Landing/LandingLayout'
-import { About } from './pages/About/About'
-import Contact from './pages/Contact/Contact'
-import { ApplyForm } from './components/Landing/HeroSliderDetails/QuickLoans/ApplyForm'
-import { LoanCalculator } from './pages/LoanCalculator/LoanCalculator'
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Landing from "./pages/Landing/Landing";
+import QuickLoans from "./components/Landing/HeroSliderDetails/QuickLoans/QuickLoans";
+import { FixedDeposits } from "./components/Landing/HeroSliderDetails/FixedDeposits";
+import { Prime } from "./components/Landing/HeroSliderDetails/Prime";
+import { HybridSavings } from "./components/Landing/HeroSliderDetails/HybridSavings";
+import { CorporateCurrent } from "./components/Landing/HeroSliderDetails/CorporateCurrent";
+import { EnterpriseLoan } from "./components/Landing/HeroSliderDetails/EnterpriseLoan";
+import LandingLayout from "./pages/Landing/LandingLayout";
+import { About } from "./pages/About/About";
+import Contact from "./pages/Contact/Contact";
+import LoanCalculator from "./pages/LoanCalculator/LoanCalculator";
+import ApplyForm from "./components/Landing/HeroSliderDetails/QuickLoans/ApplyForm";
 
 const router = createBrowserRouter([
   {
@@ -18,61 +18,58 @@ const router = createBrowserRouter([
     // errorElement: <Error />,
     children: [
       {
-        path: '/',
+        path: "/",
         element: <Landing />,
       },
       {
-        path: 'quick-loans',
+        path: "quick-loans",
         element: <QuickLoans />,
       },
       {
-        path: 'primeApp',
-        element: <Prime />
+        path: "primeApp",
+        element: <Prime />,
       },
       {
-        path: 'fixed-deposits',
-        element: <FixedDeposits />
+        path: "fixed-deposits",
+        element: <FixedDeposits />,
       },
       {
-        path: 'hybrid-savings',
-        element: <HybridSavings />
+        path: "hybrid-savings",
+        element: <HybridSavings />,
       },
       {
-        path: 'corporate-current',
-        element: <CorporateCurrent />
+        path: "corporate-current",
+        element: <CorporateCurrent />,
       },
       {
-        path: 'enterprise-loan',
-        element: <EnterpriseLoan />
+        path: "enterprise-loan",
+        element: <EnterpriseLoan />,
       },
       {
-        path: 'loan-calculator',
-        element: <LoanCalculator />
+        path: "loan-calculator",
+        element: <LoanCalculator />,
       },
       {
-        path: 'apply',
+        path: "apply",
         element: <ApplyForm />,
       },
       {
-        path: 'about',
-        element: <About />
+        path: "about",
+        element: <About />,
       },
       {
-        path: 'about/:tab',
-        element: <About />
+        path: "about/:tab",
+        element: <About />,
       },
       {
-        path: 'contact',
-        element: <Contact />
+        path: "contact",
+        element: <Contact />,
       },
-    ]
+    ],
   },
-])
+]);
 function App() {
-
-  return (
-    <RouterProvider router={router} />
-  )
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;

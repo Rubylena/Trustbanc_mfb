@@ -36,7 +36,7 @@ export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
-        <header className="tw-bg-white tw-bg-opacity-80 tw-z-10 tw-shadow md:tw-px-14 tw-fixed tw-w-full">
+        <header className="tw-bg-white tw-bg-opacity-60 tw-z-10 tw-shadow md:tw-px-14 tw-fixed tw-w-full">
             <nav className="tw-flex tw-items-center tw-justify-between tw-p-3 lg:tw-px-8 lg:tw-py-4" aria-label="Global">
                 <div className="tw-flex lg:tw-flex-1">
                     <a href="/" className="-tw-m-1.5 tw-p-1.5">
