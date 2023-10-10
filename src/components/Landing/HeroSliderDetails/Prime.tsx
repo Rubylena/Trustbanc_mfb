@@ -5,14 +5,14 @@ export const Prime = () => {
   return (
     <main className="tw-mt-16 md:tw-mt-0 tw-pr-10  md:tw-pr-20">
       <Row className="tw-items-center tw-mb-5">
-        <Col className="col-md-7 3xl:tw-w-5/12 p-0 tw-hidden sm:tw-block ">
+        <Col className="col-md-6 3xl:tw-w-5/12 p-0 tw-hidden sm:tw-block ">
           <img
             src={Images["prime-hero"]}
             alt="prime app"
             className="tw-w-full tw-object-contain"
           />
         </Col>
-        <Col className="col-sm-6 col-md-5 tw-flex tw-flex-col tw-gap-2 sm:tw-gap-5 p-0">
+        <Col className="col-sm-6 col-md-6 tw-flex tw-flex-col tw-gap-2 sm:tw-gap-5 p-0">
           <h3 className="tw-text-blue tw-font-semibold tw-text-sm sm:tw-text-3xl md:tw-text-5xl">
             Take control of your accounts anywhere
           </h3>
