@@ -3,17 +3,17 @@ import Images from "../../../assets/Images";
 
 export const EnterpriseLoan = () => {
   return (
-    <main className="tw-mt-16 md:tw-mt-24 tw-px-6 md:tw-px-14">
+    <main className="tw-mt-16 tw-mb-10 md:tw-mt-24 md:tw-mb-16 tw-px-6 md:tw-px-14">
       <Row className="tw-items-center tw-mb-5">
-        <Col className="col-md-7 3xl:tw-w-5/12 p-0">
+        <Col className="col-md-5 3xl:tw-w-5/12 p-0">
           <img
             src={Images["enterprise-loan"]}
             alt="corporate current"
             className="tw-w-full tw-object-contain tw-rounded-3xl"
           />
         </Col>
-        <Col className="col-sm-6 col-md-5 tw-flex tw-flex-col tw-gap-2 sm:tw-gap-5 p-0">
-          <h3 className="tw-text-blue tw-font-semibold tw-text-sm sm:tw-text-3xl md:tw-text-5xl">
+        <Col className="col-sm-7 col-md-5 tw-flex tw-flex-col tw-gap-2 sm:tw-gap-5 p-0">
+          <h3 className="tw-text-blue tw-font-semibold tw-text-sm sm:tw-text-3xl md:tw-text-5xl tw-text-center">
             Enterprise Loan
           </h3>
 

@@ -3,16 +3,16 @@ import Images from "../../../assets/Images";
 
 export const FixedDeposits = () => {
   return (
-    <main className="tw-mt-16 md:tw-mt-24 tw-px-6 md:tw-px-14">
-      <Row className="tw-items-center tw-mb-5">
-        <Col className="col-md-7 3xl:tw-w-5/12 p-0">
+    <main className="tw-mt-16 md:tw-mt-14 md:tw-mb-5 tw-px-6 md:tw-px-14">
+      <Row className="tw-items-center tw-h-[15rem] sm:tw-h-auto">
+        <Col className="col-md-5 3xl:tw-w-5/12 p-0 md:tw-h-[28rem] lg:tw-h-[35rem]">
           <img
             src={Images.fixed}
             alt="fixed deposits"
-            className="tw-w-full tw-object-contain"
+            className="tw-w-full tw-h-full"
           />
         </Col>
-        <Col className="col-sm-6 col-md-5 tw-flex tw-flex-col tw-gap-2 sm:tw-gap-5 p-0">
+        <Col className="col-sm-7 col-md-5 tw-flex tw-flex-col tw-gap-2 sm:tw-gap-5 p-0">
           <h3 className="tw-text-blue tw-font-semibold tw-text-sm sm:tw-text-3xl md:tw-text-5xl">
             Automate your savings and earn more
           </h3>
