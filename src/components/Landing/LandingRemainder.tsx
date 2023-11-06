@@ -48,7 +48,7 @@ export const LandingRemainder = () => {
                                         Features
                                         {" "}
                                         <li>
-                                            <a href="hybrid-savings">Hybrid Savings</a>
+                                            <a href="savings">Savings</a>
                                         </li>
                                         <li>
                                             <a href="fixed-deposits">
@@ -155,7 +155,7 @@ export const LandingRemainder = () => {
                                                 target="_blank"
                                                 rel="noreferrer"
                                             >
-                                                WeFinance
+                                                WeFinance Solutions
                                             </a>
                                         </li>
                                     </ul>
@@ -250,7 +250,7 @@ export const LandingRemainder = () => {
                             <div>
                                 <Form
                                     className="p-3"
-                                    action="https://formsubmit.co/68f4d64d3be2ed91884420c1d14b36be"
+                                    action="https://formsubmit.co/support@trustbancgroup.com"
                                     method="POST"
                                 >
                                     <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -263,12 +263,12 @@ export const LandingRemainder = () => {
                                     <input
                                         type="hidden"
                                         name="_next"
-                                        value="https://trustbanccapital.com/thanks"
+                                        value="https://trustbancmfb.com/thanks"
                                     ></input>
                                     <input
                                         type="hidden"
                                         name="_subject"
-                                        value="New submission!"
+                                        value="New submission - MFB newsletter subscription"
                                     ></input>
 
                                     <Form.Group className="mb-3" controlId="formBasicEmail">

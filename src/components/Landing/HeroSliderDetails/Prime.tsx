@@ -98,7 +98,7 @@ export const Prime = () => {
             <div className="tw-w-7">
               <img src={Icons.todo} alt="todo" />
             </div>
-            <p>Zero managements fees.</p>
+            <p>Zero management fees.</p>
           </div>
 
           <div className="tw-flex tw-items-center gap-1">

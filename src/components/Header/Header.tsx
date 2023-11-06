@@ -12,7 +12,7 @@ const features = [
     { name: 'Fixed Deposit', href: '/fixed-deposits' },
     { name: 'Enterprise Loan', href: '/enterprise-loan' },
     { name: 'Corporate Current', href: '/corporate-current' },
-    { name: 'Hybrid Savings', href: '/hybrid-savings' },
+    { name: 'Savings', href: '/savings' },
     { name: 'Prime by TrustBanc', href: '/primeApp' },
     { name: 'Loan Calculator', href: '/loan-calculator' },
 ]

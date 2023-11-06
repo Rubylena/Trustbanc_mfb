@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import "./quickLoans.scss";
+import { Button, Col, Form, Row, Stack } from "react-bootstrap";
+import ComboBox from "./Combobox";
 
 export default function ApplyForm() {
   return (
@@ -10,526 +12,286 @@ export default function ApplyForm() {
           &lArr; Quick loans
         </p>
       </Link>
-      <div className="tw-flex tw-mb-24 tw-ml-6 md:tw-ml-14 tw-h-full ">
-        <form
-          onSubmit={(e) => e.preventDefault()}
-          className="col-12 col-md-8 tw-bg-blue tw-rounded-lg tw-text-white tw-p-10 "
+      <div className="tw-flex tw-mb-24 tw-ml-4 tw-mr-4 md:tw-ml-14 md:tw-mr-0 tw-h-full ">
+        <Form
+          action="https://formsubmit.co/graceffiong@gmail.com"
+          method="POST"
+          encType="multipart/form-data"
+          className="col-12 col-md-8 tw-bg-blue tw-rounded-lg tw-text-white tw-p-4 md:tw-p-10 quick-loans"
         >
-          <div className="tw-space-y-12">
-            <div>
-              <h2>KYC details</h2>
-
-              <div className="tw-grid tw-grid-cols-1 tw-gap-x-8 tw-gap-y-10 tw-border-be tw-border-gray-900/10 tw-pb-12 md:tw-grid-cols-3">
-                <div>
-                  <label
-                    htmlFor="first-name"
-                    className="tw-block tw-text-sm tw-font-medium tw-leading-6"
-                  >
-                    First name
-                  </label>
-                  <div className="tw-mt-2">
-                    <input
-                      type="text"
-                      name="first-name"
-                      id="first-name"
-                      autoComplete="given-name"
-                      placeholder="First name"
-                      className="tw-block tw-w-full tw-rounded-md tw-border-0 tw-py-1.5 tw-text-gray-900 tw-shadow-sm tw-ring-1 tw-ring-inset tw-ring-gray-300 placeholder:tw-text-gray-400 focus:tw-ring-2 focus:tw-ring-inset focus:tw-ring-indigo-600 sm:tw-text-sm sm:tw-leading-6"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="middle-name"
-                    className="tw-block tw-text-sm tw-font-medium tw-leading-6"
-                  >
-                    Middle name
-                  </label>
-                  <div className="tw-mt-2">
-                    <input
-                      type="text"
-                      name="middle-name"
-                      id="middle-name"
-                      autoComplete="family-name"
-                      placeholder="Middle name"
-                      className="tw-block tw-w-full tw-rounded-md tw-border-0 tw-py-1.5 tw-text-gray-900 tw-shadow-sm tw-ring-1 tw-ring-inset tw-ring-gray-300 placeholder:tw-text-gray-400 focus:tw-ring-2 focus:tw-ring-inset focus:tw-ring-indigo-600 sm:tw-text-sm sm:tw-leading-6"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="last-name"
-                    className="tw-block tw-text-sm tw-font-medium tw-leading-6"
-                  >
-                    Last name
-                  </label>
-                  <div className="tw-mt-2">
-                    <input
-                      type="text"
-                      name="last-name"
-                      id="last-name"
-                      autoComplete="family-name"
-                      placeholder="Last name"
-                      className="tw-block tw-w-full tw-rounded-md tw-border-0 tw-py-1.5 tw-text-gray-900 tw-shadow-sm tw-ring-1 tw-ring-inset tw-ring-gray-300 placeholder:tw-text-gray-400 focus:tw-ring-2 focus:tw-ring-inset focus:tw-ring-indigo-600 sm:tw-text-sm sm:tw-leading-6"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="tw-block tw-text-sm tw-font-medium tw-leading-6"
-                  >
-                    Email
-                  </label>
-                  <div className="mt-2">
-                    <input
-                      id="email"
-                      name="email"
-                      type="email"
-                      autoComplete="email"
-                      placeholder="Email"
-                      className="tw-block tw-w-full tw-rounded-md tw-border-0 tw-py-1.5 tw-text-gray-900 tw-shadow-sm tw-ring-1 tw-ring-inset tw-ring-gray-300 placeholder:tw-text-gray-400 focus:tw-ring-2 focus:tw-ring-inset focus:tw-ring-indigo-600 sm:tw-text-sm sm:tw-leading-6"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="mobile-number"
-                    className="tw-block tw-text-sm tw-font-medium tw-leading-6"
-                  >
-                    Mobile Number
-                  </label>
-                  <div className="tw-mt-2">
-                    <input
-                      id="mobile-number"
-                      name="mobile-number"
-                      type="tel"
-                      autoComplete="mobile-number"
-                      placeholder="Mobile Number"
-                      className="tw-block tw-w-full tw-rounded-md tw-border-0 tw-py-1.5 tw-text-gray-900 tw-shadow-sm tw-ring-1 tw-ring-inset tw-ring-gray-300 placeholder:tw-text-gray-400 focus:tw-ring-2 focus:tw-ring-inset focus:tw-ring-indigo-600 sm:tw-text-sm sm:tw-leading-6"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="address"
-                    className="tw-block tw-text-sm tw-font-medium tw-leading-6"
-                  >
-                    Address
-                  </label>
-                  <div className="mt-2">
-                    <input
-                      id="address"
-                      name="address"
-                      type="text"
-                      autoComplete="address"
-                      placeholder="Address"
-                      className="tw-block tw-w-full tw-rounded-md tw-border-0 tw-py-1.5 tw-text-gray-900 tw-shadow-sm tw-ring-1 tw-ring-inset tw-ring-gray-300 placeholder:tw-text-gray-400 focus:tw-ring-2 focus:tw-ring-inset focus:tw-ring-indigo-600 sm:tw-text-sm sm:tw-leading-6"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="bvn"
-                    className="tw-block tw-text-sm tw-font-medium tw-leading-6"
-                  >
-                    Bank verification Number (BVN)
-                  </label>
-                  <div className="mt-2">
-                    <input
-                      id="bvn"
-                      name="bvn"
-                      type="number"
-                      autoComplete="bvn"
-                      placeholder="BVN"
-                      className="tw-block tw-w-full tw-rounded-md tw-border-0 tw-py-1.5 tw-text-gray-900 tw-shadow-sm tw-ring-1 tw-ring-inset tw-ring-gray-300 placeholder:tw-text-gray-400 focus:tw-ring-2 focus:tw-ring-inset focus:tw-ring-indigo-600 sm:tw-text-sm sm:tw-leading-6"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="ippis"
-                    className="tw-block tw-text-sm tw-font-medium tw-leading-6"
-                  >
-                    IPPIS/Service Number
-                  </label>
-                  <div className="mt-2">
-                    <input
-                      id="ippis"
-                      name="ippis"
-                      type="number"
-                      autoComplete="ippis"
-                      placeholder="IPPIS"
-                      className="tw-block tw-w-full tw-rounded-md tw-border-0 tw-py-1.5 tw-text-gray-900 tw-shadow-sm tw-ring-1 tw-ring-inset tw-ring-gray-300 placeholder:tw-text-gray-400 focus:tw-ring-2 focus:tw-ring-inset focus:tw-ring-indigo-600 sm:tw-text-sm sm:tw-leading-6"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <h2>Loan Form</h2>
-
-              <div className="tw-grid tw-grid-cols-1 tw-gap-x-8 tw-gap-y-10 tw-border-be tw-border-gray-900/10 tw-pb-12 md:tw-grid-cols-3">
-                <div>
-                  <label
-                    htmlFor="amount"
-                    className="tw-block tw-text-sm tw-font-medium tw-leading-6"
-                  >
-                    Loan Amount (NGN)
-                  </label>
-                  <div className="tw-mt-2">
-                    <input
-                      type="number"
-                      name="amount"
-                      id="amount"
-                      autoComplete="given-name"
-                      placeholder="Loan Amount"
-                      className="tw-block tw-w-full tw-rounded-md tw-border-0 tw-py-1.5 tw-text-gray-900 tw-shadow-sm tw-ring-1 tw-ring-inset tw-ring-gray-300 placeholder:tw-text-gray-400 focus:tw-ring-2 focus:tw-ring-inset focus:tw-ring-indigo-600 sm:tw-text-sm sm:tw-leading-6"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="country"
-                    className="tw-block tw-text-sm tw-font-medium tw-leading-6"
-                  >
-                    Duration
-                  </label>
-                  <div className="tw-mt-2">
-                    <select
-                      id="country"
-                      name="country"
-                      autoComplete="country-name"
-                      className="tw-block tw-w-full tw-rounded-md tw-border-0 tw-py-1.5 tw-text-gray-900 tw-shadow-sm tw-ring-1 tw-ring-inset tw-ring-gray-300 focus:tw-ring-2 focus:tw-ring-inset focus:tw-ring-indigo-600 sm:tw-max-w-xs sm:tw-text-sm sm:tw-leading-6"
-                    >
-                      <option value={undefined}>select</option>
-                      <option value={3}>3</option>
-                      <option value={6}>6</option>
-                      <option value={12}>12</option>
-                      <option value={24}>24</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="bank-name"
-                    className="tw-block tw-text-sm tw-font-medium tw-leading-6"
-                  >
-                    Salary Bank Name
-                  </label>
-                  <div className="tw-mt-2">
-                    <input
-                      type="text"
-                      name="bank-name"
-                      id="bank-name"
-                      autoComplete="family-name"
-                      placeholder="Bank Name"
-                      className="tw-block tw-w-full tw-rounded-md tw-border-0 tw-py-1.5 tw-text-gray-900 tw-shadow-sm tw-ring-1 tw-ring-inset tw-ring-gray-300 placeholder:tw-text-gray-400 focus:tw-ring-2 focus:tw-ring-inset focus:tw-ring-indigo-600 sm:tw-text-sm sm:tw-leading-6"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="account-number"
-                    className="tw-block tw-text-sm tw-font-medium tw-leading-6"
-                  >
-                    Account Number
-                  </label>
-                  <div className="tw-mt-2">
-                    <input
-                      type="number"
-                      name="account-number"
-                      id="account-number"
-                      autoComplete="family-name"
-                      placeholder="Account Number"
-                      className="tw-block tw-w-full tw-rounded-md tw-border-0 tw-py-1.5 tw-text-gray-900 tw-shadow-sm tw-ring-1 tw-ring-inset tw-ring-gray-300 placeholder:tw-text-gray-400 focus:tw-ring-2 focus:tw-ring-inset focus:tw-ring-indigo-600 sm:tw-text-sm sm:tw-leading-6"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="employer"
-                    className="tw-block tw-text-sm tw-font-medium tw-leading-6"
-                  >
-                    Employer
-                  </label>
-                  <div className="mt-2">
-                    <input
-                      id="employer"
-                      name="employer"
-                      type="text"
-                      autoComplete="employer"
-                      placeholder="Employer"
-                      className="tw-block tw-w-full tw-rounded-md tw-border-0 tw-py-1.5 tw-text-gray-900 tw-shadow-sm tw-ring-1 tw-ring-inset tw-ring-gray-300 placeholder:tw-text-gray-400 focus:tw-ring-2 focus:tw-ring-inset focus:tw-ring-indigo-600 sm:tw-text-sm sm:tw-leading-6"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="employment-date"
-                    className="tw-block tw-text-sm tw-font-medium tw-leading-6"
-                  >
+          <Stack gap={3}>
+            <h1 className="fs-3">KYC Details</h1>
+            <input
+              type="hidden"
+              name="_subject"
+              value="NEW LOAN SUBMISSION - MFB"
+            />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://trustbancmfb.com/thanks"
+            />
+            <Row className="row-gap-3">
+              <Col xs={12} md={6}>
+                <Form.Control
+                  placeholder="Your FirstName"
+                  name="First Name"
+                  type="text"
+                  required
+                />
+              </Col>
+              <Col>
+                <Form.Control
+                  placeholder="Your MiddleName"
+                  name="Middle Name"
+                  type="text"
+                  required
+                />
+              </Col>
+            </Row>
+            <Row className="row-gap-3">
+              <Col xs={12} md={6}>
+                <Form.Control
+                  placeholder="Your LastName"
+                  name="Last Name"
+                  type="text"
+                  required
+                />
+              </Col>
+              <Col>
+                <Form.Control
+                  placeholder="Your Email"
+                  type="email"
+                  name="Email"
+                  required
+                  autoComplete="on"
+                />
+              </Col>
+            </Row>
+            <Row className="row-gap-3">
+              <Col xs={12} md={6}>
+                <Form.Control
+                  placeholder="Your Telephone"
+                  type="number"
+                  name="Telephone"
+                  required
+                />
+              </Col>
+              <Col>
+                <Form.Control
+                  placeholder="Your Address"
+                  type="text"
+                  name="Address"
+                  required
+                  autoComplete="on"
+                />
+              </Col>
+            </Row>
+            <Row className="row-gap-3">
+              <Col xs={12} md={6}>
+                <Form.Control
+                  placeholder="Your BVN"
+                  type="number"
+                  name="BVN"
+                  required
+                />
+              </Col>
+              <Col>
+                <Form.Control
+                  placeholder="Your IPPIS/Service Number"
+                  name="IPPIS/Service Number"
+                  required
+                />
+              </Col>
+            </Row>
+          </Stack>
+          <Stack gap={3}>
+            <h1 className="fs-3 pt-3">Loan Form</h1>
+            <Row className="row-gap-3">
+              <Col xs={12} md={6}>
+                <Form.Control
+                  placeholder="Loan Amount(NGN)"
+                  type="number"
+                  name="Loan Amount"
+                  required
+                />
+              </Col>
+              <Col>
+                <Form.Control
+                  placeholder="Purpose of Loan"
+                  type="text"
+                  name="Purpose of Loan"
+                  required
+                />
+              </Col>
+            </Row>
+            <Row className="row-gap-3">
+              <Col xs={12} md={6}>
+                <Form.Group>
+                  <ComboBox />
+                </Form.Group>
+              </Col>
+              <Col>
+                <Form.Control
+                  placeholder="Account Number"
+                  type="number"
+                  name="Account Number"
+                  required
+                  className="border"
+                />
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} md={6} className="margin-b">
+                <Form.Control
+                  placeholder="Employer"
+                  type="text"
+                  name="Employer"
+                  required
+                />
+              </Col>
+              <Col>
+                <Form.Floating>
+                  <Form.Control
+                    id="floatingPasswordCustom"
+                    type="date"
+                    placeholder="Employment Date"
+                    name="Employment Date"
+                    required
+                  />
+                  <label htmlFor="floatingPasswordCustom">
                     Employment Date
                   </label>
-                  <div className="tw-mt-2">
-                    <input
-                      id="employment-date"
-                      name="employment-date"
-                      type="date"
-                      autoComplete="employment-date"
-                      placeholder="Employment Date"
-                      className="tw-block tw-w-full tw-rounded-md tw-border-0 tw-py-1.5 tw-text-gray-900 tw-shadow-sm tw-ring-1 tw-ring-inset tw-ring-gray-300 placeholder:tw-text-gray-400 focus:tw-ring-2 focus:tw-ring-inset focus:tw-ring-indigo-600 sm:tw-text-sm sm:tw-leading-6"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="employers-address"
-                    className="tw-block tw-text-sm tw-font-medium tw-leading-6"
-                  >
-                    Employers Address
-                  </label>
-                  <div className="mt-2">
-                    <input
-                      id="employers-address"
-                      name="employers-address"
-                      type="text"
-                      autoComplete="employers-address"
-                      placeholder="Employers Address"
-                      className="tw-block tw-w-full tw-rounded-md tw-border-0 tw-py-1.5 tw-text-gray-900 tw-shadow-sm tw-ring-1 tw-ring-inset tw-ring-gray-300 placeholder:tw-text-gray-400 focus:tw-ring-2 focus:tw-ring-inset focus:tw-ring-indigo-600 sm:tw-text-sm sm:tw-leading-6"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="purpose"
-                    className="tw-block tw-text-sm tw-font-medium tw-leading-6"
-                  >
-                    Purpose
-                  </label>
-                  <div className="tw-mt-2">
-                    <select
-                      id="purpose"
-                      name="purpose"
-                      autoComplete="purpose"
-                      className="tw-block tw-w-full tw-rounded-md tw-border-0 tw-py-1.5 tw-text-gray-900 tw-shadow-sm tw-ring-1 tw-ring-inset tw-ring-gray-300 focus:tw-ring-2 focus:tw-ring-inset focus:tw-ring-indigo-600 sm:tw-max-w-xs sm:tw-text-sm sm:tw-leading-6"
-                    >
-                      <option value={undefined}>select</option>
-                      <option value={"rent"}>Rent</option>
-                      <option value={"School"}>School</option>
-                      <option value={"Church stuff"}>Church stuff</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="next-of-kin"
-                    className="tw-block tw-text-sm tw-font-medium tw-leading-6"
-                  >
-                    Full name of Next of Kin
-                  </label>
-                  <div className="mt-2">
-                    <input
-                      id="next-of-kin"
-                      name="next-of-kin"
-                      type="text"
-                      autoComplete="next-of-kin"
-                      placeholder="Full name of Next of Kin"
-                      className="tw-block tw-w-full tw-rounded-md tw-border-0 tw-py-1.5 tw-text-gray-900 tw-shadow-sm tw-ring-1 tw-ring-inset tw-ring-gray-300 placeholder:tw-text-gray-400 focus:tw-ring-2 focus:tw-ring-inset focus:tw-ring-indigo-600 sm:tw-text-sm sm:tw-leading-6"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="relationship"
-                    className="tw-block tw-text-sm tw-font-medium tw-leading-6"
-                  >
-                    Relationship with Next of Kin
-                  </label>
-                  <div className="tw-mt-2">
-                    <input
-                      id="relationship"
-                      name="relationship"
-                      type="text"
-                      autoComplete="relationship"
-                      placeholder="Relationship with Next of Kin"
-                      className="tw-block tw-w-full tw-rounded-md tw-border-0 tw-py-1.5 tw-text-gray-900 tw-shadow-sm tw-ring-1 tw-ring-inset tw-ring-gray-300 placeholder:tw-text-gray-400 focus:tw-ring-2 focus:tw-ring-inset focus:tw-ring-indigo-600 sm:tw-text-sm sm:tw-leading-6"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="next-of-kin-tel"
-                    className="tw-block tw-text-sm tw-font-medium tw-leading-6"
-                  >
-                    Next of Kin Telephone
-                  </label>
-                  <div className="mt-2">
-                    <input
-                      id="next-of-kin-tel"
-                      name="next-of-kin-tel"
-                      type="tel"
-                      autoComplete="next-of-kin-tel"
-                      placeholder="Next of Kin Telephone"
-                      className="tw-block tw-w-full tw-rounded-md tw-border-0 tw-py-1.5 tw-text-gray-900 tw-shadow-sm tw-ring-1 tw-ring-inset tw-ring-gray-300 placeholder:tw-text-gray-400 focus:tw-ring-2 focus:tw-ring-inset focus:tw-ring-indigo-600 sm:tw-text-sm sm:tw-leading-6"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="next-of-kin-email"
-                    className="tw-block tw-text-sm tw-font-medium tw-leading-6"
-                  >
-                    Next of Kin Email
-                  </label>
-                  <div className="mt-2">
-                    <input
-                      id="next-of-kin-email"
-                      name="next-of-kin-email"
-                      type="email"
-                      autoComplete="next-of-kin-email"
-                      placeholder="Next of Kin Email"
-                      className="tw-block tw-w-full tw-rounded-md tw-border-0 tw-py-1.5 tw-text-gray-900 tw-shadow-sm tw-ring-1 tw-ring-inset tw-ring-gray-300 placeholder:tw-text-gray-400 focus:tw-ring-2 focus:tw-ring-inset focus:tw-ring-indigo-600 sm:tw-text-sm sm:tw-leading-6"
-                    />
-                  </div>
-                </div>
-
-                <div className="tw-col-span-full">
-                  <label
-                    htmlFor="next-of-kin-address"
-                    className="tw-block tw-text-sm tw-font-medium tw-leading-6"
-                  >
-                    Next of Kin Address
-                  </label>
-                  <div className="mt-2">
-                    <input
-                      id="next-of-kin-address"
-                      name="next-of-kin-address"
-                      type="text"
-                      autoComplete="next-of-kin-address"
-                      placeholder="Next of Kin Address"
-                      className="tw-block tw-w-full tw-rounded-md tw-border-0 tw-py-1.5 tw-text-gray-900 tw-shadow-sm tw-ring-1 tw-ring-inset tw-ring-gray-300 placeholder:tw-text-gray-400 focus:tw-ring-2 focus:tw-ring-inset focus:tw-ring-indigo-600 sm:tw-text-sm sm:tw-leading-6"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="tw-grid tw-grid-cols-3 tw-gap-x-8 tw-gap-y-10 tw-pb-12 md:tw-grid-cols-12">
-            <div className="tw-col-span-4">
-              <label
-                htmlFor="passport"
-                className="tw-block tw-text-sm tw-font-medium tw-leading-6"
-              >
-                Passport Photograph:
-              </label>
-              <label
-                htmlFor="passport"
-                className="tw-relative tw-cursor-pointer tw-rounded-md tw-font-semibold tw-text-white "
-              >
-                <input id="passport" name="passport" type="file" />
-              </label>
-            </div>
-
-            <div className="tw-col-span-4">
-              <label
-                htmlFor="staff-id"
-                className="tw-block tw-text-sm tw-font-medium tw-leading-6"
-              >
-                Valid Staff ID:
-              </label>
-              <label
-                htmlFor="staff-id"
-                className="tw-relative tw-cursor-pointer tw-rounded-md tw-font-semibold tw-text-white "
-              >
-                <input id="staff-id" name="staff-id" type="file" />
-              </label>
-            </div>
-          </div>
-
-          <div className="tw-grid tw-grid-cols-3 tw-gap-x-8 tw-gap-y-10 tw-pb-12 md:tw-grid-cols-12">
-            <div className="tw-col-span-4">
-              <label
-                htmlFor="id"
-                className="tw-block tw-text-sm tw-font-medium tw-leading-6"
-              >
-                Valid ID:
-              </label>
-              <label
-                htmlFor="id"
-                className="tw-relative tw-cursor-pointer tw-rounded-md tw-font-semibold tw-text-white "
-              >
-                <input id="id" name="id" type="file" />
-              </label>
-            </div>
-
-            <div className="tw-col-span-4">
-              <label
-                htmlFor="sign"
-                className="tw-block tw-text-sm tw-font-medium tw-leading-6"
-              >
-                Signature
-              </label>
-              <label
-                htmlFor="sign"
-                className="tw-relative tw-cursor-pointer tw-rounded-md tw-font-semibold tw-text-white "
-              >
-                <input id="sign" name="sign" type="file" />
-              </label>
-            </div>
-          </div>
-
-          <div className="tw-mt-6 tw-space-y-10 tw-text-justify">
-            <div className="tw-relative tw-flex tw-gap-x-2">
-              <input
-                id="comments"
-                name="comments"
-                type="checkbox"
-                className="tw-h-4 tw-w-4 tw-rounded tw-border-gray-300 tw-text-blue focus:tw-ring-0"
-              />
-              <label
-                htmlFor="comments"
-                className="tw-text-xs tw-text-[#FFA044]"
-              >
-                I hereby consent that the information I supplied above are true.
-                I hereby also agree that upon disbursement, the management fee
-                and transfer fee should be deducted from the requested loan that
-                is to be trasferred to my stated salary account and the
-                repayment will be directly deducted from source via applicable
-                Direct Debit Platform.
-              </label>
-            </div>
-          </div>
-
-          <div className="tw-mt-6 tw-flex tw-items-center tw-gap-x-6">
-            <button
-              type="submit"
-              className="tw-rounded-md tw-bg-white tw-px-6 tw-py-2 tw-text-sm tw-font-semibold tw-text-blue tw-shadow-sm focus-visible:tw-outline focus-visible:tw-outline-2 focus-visible:tw-outline-offset-2 focus-visible:tw-outline-blue"
-            >
-              Submit
-            </button>
-          </div>
-        </form>
+                </Form.Floating>
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} md={6} className="margin-b">
+                <Form.Control
+                  placeholder="Employers Address"
+                  type="text"
+                  name="Employers Address"
+                  required
+                />
+              </Col>
+              <Col>
+                <Form.Control
+                  placeholder="Employers Telephone"
+                  type="number"
+                  name="Employers Telephone"
+                  required
+                />
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} md={6} className="margin-b">
+                <Form.Control
+                  placeholder="FullName of Next of Kin"
+                  type="text"
+                  name="Full Name of Next of Kin"
+                  required
+                />
+              </Col>
+              <Col>
+                <Form.Control
+                  placeholder="Relationship with Next of Kin"
+                  type="text"
+                  name="Relationship with Next of Kin"
+                  required
+                />
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} md={6} className="margin-b">
+                <Form.Control
+                  placeholder="Next of Kin Telephone"
+                  type="number"
+                  name="Next of Kin Telephone"
+                  required
+                />
+              </Col>
+              <Col>
+                <Form.Control
+                  placeholder="Next of Kin Email"
+                  type="email"
+                  name="Next of Kin email"
+                  required
+                />
+              </Col>
+            </Row>
+            <Form.Control
+              placeholder="Next of Kin Address"
+              type="text"
+              name="Next of Kin Address"
+              required
+            />
+            <Row>
+              <Col xs={12} md={6}>
+                <Form.Group controlId="formFile" className="mb-3">
+                  <Form.Label>Passport Photograph:</Form.Label>
+                  <Form.Control
+                    type="file"
+                    name="Passport Photo attachment"
+                    accept="image/png, image/jpeg"
+                    required
+                  />
+                </Form.Group>{" "}
+              </Col>
+              <Col>
+                <Form.Group controlId="formFile" className="mb-3">
+                  <Form.Label>Valid Staff ID:</Form.Label>
+                  <Form.Control
+                    type="file"
+                    name="Valid Staff ID attachment"
+                    accept="image/png, image/jpeg"
+                    required
+                  />
+                </Form.Group>{" "}
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} md={6}>
+                <Form.Group controlId="formFile" className="mb-3">
+                  <Form.Label>Valid ID:</Form.Label>
+                  <Form.Control
+                    type="file"
+                    name="Valid ID attachment"
+                    accept="image/png, image/jpeg"
+                    required
+                  />
+                </Form.Group>{" "}
+              </Col>
+              <Col>
+                <Form.Group controlId="formFile" className="mb-3">
+                  <Form.Label>Recent PaySlip:</Form.Label>
+                  <Form.Control
+                    type="file"
+                    name="Recent PaySlip attachment"
+                    accept="image/png, image/jpeg"
+                    required
+                  />
+                </Form.Group>{" "}
+              </Col>
+            </Row>
+            <Form.Check
+              id="form-check"
+              type="checkbox"
+              label="I hereby consent that the information I supplied above are true."
+              style={{ fontSize: "0.8rem" }}
+              required
+            />
+            <Form.Check
+              id="form-check2"
+              type="checkbox"
+              label="I hereby also agree that upon disbursement, the management fee and transfer fee should be deducted from the requested loan that is to be transferred to my stated salary account and the repayment will be directly deducted from source via applicable Direct Debit Platform."
+              style={{ color: "#daa43f", fontSize: "0.8rem" }}
+              required
+            />
+            <Button type="submit">Submit</Button>
+          </Stack>
+        </Form>
         <div className="col-md-4 form-bg tw-hidden md:tw-block"></div>
       </div>
     </>

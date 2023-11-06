@@ -14,3 +14,77 @@
   background: url("../../../../assets/images/apply-form-bg.png") no-repeat;
   background-position: bottom right;
 }
+
+.quick-loans {
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        appearance: none;
+        margin: 0;
+    }
+    .form-floating>label{
+        background-color: inherit;
+    }
+    input.form-control:focus{
+        outline: none; 
+        box-shadow: none; 
+    }
+    input.form-control{
+        background-color:white;
+    
+    }
+    input:focus {
+        outline: 2px solid red; /* Change the color to red or any color you prefer */
+        box-shadow: none; /* Remove the default blue shadow */
+    }
+    input#formFile.form-control{
+        background-color: inherit;
+        border: none;
+    color:white
+    }
+    .btn-primary {
+        background-color: #fff !important;
+        color: #044188 !important; 
+        font-weight: 500;
+        border:none;
+        width: 20%;
+        height: 50px;
+    }
+    select#formGridState.form-select{
+    height: 50px;
+    }
+    .my-autocomplete{
+        background-color: #ffff;
+        border-radius:  0.375rem;
+    }
+    
+    
+    @media screen and (max-width: 768px) {
+       .loan input::placeholder {
+          font-size: 14px;
+        }
+        .btn-primary {
+            width: 100%;
+        }
+        .margin-b{
+            margin-bottom: 15px ;
+        }
+      }
+      
+      @media screen and (max-width: 480px) {
+       .loan input::placeholder {
+          font-size: 12px;
+        }
+        .btn-primary {
+            width: 100%;
+        }
+        .margin-b{
+            margin-bottom: 15px;
+        }
+      }
+}
+
+.form-check-input{
+    outline: none !important;
+}

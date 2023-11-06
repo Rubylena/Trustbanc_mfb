@@ -19,20 +19,20 @@ export const Grow = () => {
 
                     <h4 className="tw-pt-5 tw-font-medium tw-text-xs md:tw-text-sm">WHAT WE STAND FOR</h4>
                     <h3 className='tw-font-semibold tw-text-md sm:tw-text-2xl md:tw-text-4xl'>Helping small businesses like yours</h3>
-                    <p className='tw-text-xs sm:tw-text-sm md:tw-text-md'>To reduce global poverty to the lowest possible minimum through financial empowerment.<br /> To become extremely relevant in the global financial services community.
+                    <p className='tw-text-xs sm:tw-text-sm md:tw-text-md tw-text-white'>To reduce global poverty to the lowest possible minimum through financial empowerment.<br /> To become extremely relevant in the global financial services community.
                     </p>
                     <div className="tw-flex tw-flex-wrap tw-justify-center tw-gap-10 ">
                         <div className="tw-flex tw-flex-col tw-items-center tw-gap-2">
                             <p className="tw-bg-white tw-text-blue tw-text-center tw-rounded-full tw-h-10 tw-w-10 tw-flex tw-justify-center tw-items-center tw-font-semibold">90%</p>
-                            <p className="tw-font-medium tw-text-xs md:tw-text-sm">TURN AROUND</p>
+                            <p className="tw-font-medium tw-text-xs md:tw-text-sm tw-text-white">TURN AROUND</p>
                         </div>
                         <div className="tw-flex tw-flex-col tw-items-center tw-gap-2">
                             <p className="tw-bg-white tw-text-blue tw-text-center tw-rounded-full tw-h-10 tw-w-10 tw-flex tw-justify-center tw-items-center tw-font-semibold">92%</p>
-                            <p className="tw-font-medium tw-text-xs md:tw-text-sm">CUSTOMER SERVICE</p>
+                            <p className="tw-font-medium tw-text-xs md:tw-text-sm tw-text-white">CUSTOMER SERVICE</p>
                         </div>
                         <div className="tw-flex tw-flex-col tw-items-center tw-gap-2">
                             <p className="tw-bg-white tw-text-blue tw-text-center tw-rounded-full tw-h-10 tw-w-10 tw-flex tw-justify-center tw-items-center tw-font-semibold">98%</p>
-                            <p className="tw-font-medium tw-text-xs md:tw-text-sm">HONESTY</p>
+                            <p className="tw-font-medium tw-text-xs md:tw-text-sm tw-text-white">HONESTY</p>
                         </div>
                     </div>
                     <Link to='enterprise-loan' className='tw-text-xs sm:tw-text-sm md:tw-text-md tw-bg-white tw-w-fit tw-rounded p-1 tw-drop-shadow-sm tw-shadow tw-text-blue tw-font-semibold'>Read More</Link>
