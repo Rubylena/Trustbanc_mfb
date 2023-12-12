@@ -3,7 +3,7 @@ import Landing from "./pages/Landing/Landing";
 import QuickLoans from "./components/Landing/HeroSliderDetails/QuickLoans/QuickLoans";
 import { FixedDeposits } from "./components/Landing/HeroSliderDetails/FixedDeposits";
 import { Prime } from "./components/Landing/HeroSliderDetails/Prime";
-import { HybridSavings } from "./components/Landing/HeroSliderDetails/HybridSavings";
+import { Savings } from "./components/Landing/HeroSliderDetails/Savings";
 import { CorporateCurrent } from "./components/Landing/HeroSliderDetails/CorporateCurrent";
 import { EnterpriseLoan } from "./components/Landing/HeroSliderDetails/EnterpriseLoan";
 import LandingLayout from "./pages/Landing/LandingLayout";
@@ -11,6 +11,7 @@ import { About } from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import LoanCalculator from "./pages/LoanCalculator/LoanCalculator";
 import ApplyForm from "./components/Landing/HeroSliderDetails/QuickLoans/ApplyForm";
+import ThankYou from "./pages/ThankYou/ThankYou";
 
 const router = createBrowserRouter([
   {
@@ -34,8 +35,8 @@ const router = createBrowserRouter([
         element: <FixedDeposits />,
       },
       {
-        path: "hybrid-savings",
-        element: <HybridSavings />,
+        path: "savings",
+        element: <Savings />,
       },
       {
         path: "corporate-current",
@@ -64,6 +65,10 @@ const router = createBrowserRouter([
       {
         path: "contact",
         element: <Contact />,
+      },
+      {
+        path: "thanks",
+        element: <ThankYou />,
       },
     ],
   },

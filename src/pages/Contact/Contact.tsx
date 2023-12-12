@@ -1,6 +1,6 @@
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import Images, { Icons } from "../../assets/Images";
-import './contact.scss'
+import "./contact.scss";
 
 const Contact = () => {
   return (
@@ -35,12 +35,14 @@ const Contact = () => {
       <section>
         <Container className="tw-flex tw-flex-col tw-gap-10">
           <Row className="d-flex justify-content-between gap-3">
-            <Col
-              sm
-              md={6}
-              className=""
-            >
-              <p>We at TrustBanc MfB, takes pride in the efficiency and effectiveness of our vibrant management team, which gives us the ability to be proactive in satisfying our existing and prospective customers. We deliver financial services that are of the highest quality to the unbanked, underbanked and banked.</p>
+            <Col sm md={6} className="">
+              <p>
+                We at TrustBanc MfB, takes pride in the efficiency and
+                effectiveness of our vibrant management team, which gives us the
+                ability to be proactive in satisfying our existing and
+                prospective customers. We deliver financial services that are of
+                the highest quality to the unbanked, underbanked and banked.
+              </p>
 
               <div className=" tw-max-w-sm m-auto">
                 <img src={Images.landline} alt="Landline" />
@@ -54,7 +56,11 @@ const Contact = () => {
             >
               <h2 className="mt-3"> Get in touch</h2>
               <div className="d-flex gap-3 align-items-center">
-                <img src={Icons.map} alt="location" className="tw-w-10 tw-h-10" />
+                <img
+                  src={Icons.map}
+                  alt="location"
+                  className="tw-w-10 tw-h-10"
+                />
                 <p>
                   163 Sinari Daranijo Street, Off Ligali Ayorinde, Victoria
                   Island, Lagos.
@@ -90,7 +96,7 @@ const Contact = () => {
             >
               <h2> Send a message</h2>
               <Form
-                action="https://formsubmit.co/68f4d64d3be2ed91884420c1d14b36be"
+                action="https://formsubmit.co/support@trustbancgroup.comm"
                 method="POST"
               >
                 <Form.Group className="mb-3">
@@ -132,12 +138,12 @@ const Contact = () => {
                 <input
                   type="hidden"
                   name="_subject"
-                  value="New submission!"
+                  value="New submission - MFB Contact us"
                 ></input>
                 <input
                   type="hidden"
                   name="_next"
-                  value="https://trustbanccapital.com/thanks"
+                  value="https://trustbanccmfb.com/thanks"
                 ></input>
                 {/* <input type="hidden" name="_cc" value="gordie2u@gmail.com" /> */}
 
@@ -145,9 +151,9 @@ const Contact = () => {
                   variant="light"
                   type="submit"
                   className="w-25 text-dark-blue fw-medium"
-                // onSubmit={() => {
-                //   setModalShow(true);
-                // }}
+                  // onSubmit={() => {
+                  //   setModalShow(true);
+                  // }}
                 >
                   Send
                 </Button>
@@ -163,7 +169,7 @@ const Contact = () => {
             >
               <Form
                 className="p-3"
-                action="https://formsubmit.co/68f4d64d3be2ed91884420c1d14b36be"
+                action="https://formsubmit.co/support@trustbancgroup.com"
                 method="POST"
               >
                 <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -176,12 +182,12 @@ const Contact = () => {
                 <input
                   type="hidden"
                   name="_next"
-                  value="https://trustbanccapital.com/thanks"
+                  value="https://trustbanccmfb.com/thanks"
                 ></input>
                 <input
                   type="hidden"
                   name="_subject"
-                  value="New submission!"
+                  value="New submission - MFB newsletter subscription"
                 ></input>
 
                 <Form.Group controlId="formBasicEmail">
@@ -210,7 +216,7 @@ const Contact = () => {
         </Container>
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

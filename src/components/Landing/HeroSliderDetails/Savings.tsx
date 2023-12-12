@@ -1,14 +1,14 @@
 import { Col, Row } from "react-bootstrap";
 import Images from "../../../assets/Images";
 
-export const HybridSavings = () => {
+export const Savings = () => {
   return (
     <main className="tw-mt-16 md:tw-mt-24 tw-px-6 md:tw-px-14">
       <Row className="tw-items-center tw-mb-5">
         <Col className="col-md-5 3xl:tw-w-5/12 p-0">
           <img
-            src={Images.hybrid}
-            alt="hybrid savings"
+            src={Images.savings}
+            alt="savings"
             className="tw-w-full tw-object-contain"
           />
         </Col>
@@ -21,7 +21,7 @@ export const HybridSavings = () => {
         </Col>
       </Row>
       <p className="tw-text-xs sm:tw-text-sm md:tw-text-md tw-text-justify">
-        TrustBanc MfB hybrid savings account comes with full KYC (Know Your
+        TrustBanc MfB savings account comes with full KYC (Know Your
         Customer) requirements and also makes you gain access to the world of
         convenience which comes with owning a TrustBanc MfB account. Also, our
         customers get to enjoy full range of services on offer ranging from
