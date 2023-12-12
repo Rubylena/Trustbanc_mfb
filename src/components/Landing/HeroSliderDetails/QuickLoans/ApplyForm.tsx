@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./quickLoans.scss";
 import { Button, Col, Form, Row, Stack } from "react-bootstrap";
-import ComboBox from "./Combobox";
+import ComboBox from "./ComboBox";
 
 export default function ApplyForm() {
   return (
@@ -14,7 +14,7 @@ export default function ApplyForm() {
       </Link>
       <div className="tw-flex tw-mb-24 tw-ml-4 tw-mr-4 md:tw-ml-14 md:tw-mr-0 tw-h-full ">
         <Form
-          action="https://formsubmit.co/graceffiong@gmail.com"
+          action="https://formsubmit.co/support@trustbancgroup.com"
           method="POST"
           encType="multipart/form-data"
           className="col-12 col-md-8 tw-bg-blue tw-rounded-lg tw-text-white tw-p-4 md:tw-p-10 quick-loans"
@@ -31,7 +31,8 @@ export default function ApplyForm() {
             <input
               type="hidden"
               name="_next"
-              value="https://trustbancmfb.com/thanks"
+              value="https://localhost:5173/thanks"
+              // value="https://trustbancmfb.com/thanks"
             />
             <Row className="row-gap-3">
               <Col xs={12} md={6}>
@@ -129,11 +130,21 @@ export default function ApplyForm() {
             </Row>
             <Row className="row-gap-3">
               <Col xs={12} md={6}>
+                <Form.Control
+                  placeholder="Loan Tenor (duration)"
+                  type="number"
+                  name="Loan Tenor"
+                  required
+                />
+              </Col>
+              <Col>
                 <Form.Group>
                   <ComboBox />
                 </Form.Group>
               </Col>
-              <Col>
+            </Row>
+            <Row className="row-gap-3">
+              <Col xs={12} md={6}>
                 <Form.Control
                   placeholder="Account Number"
                   type="number"
@@ -142,9 +153,7 @@ export default function ApplyForm() {
                   className="border"
                 />
               </Col>
-            </Row>
-            <Row>
-              <Col xs={12} md={6} className="margin-b">
+              <Col>
                 <Form.Control
                   placeholder="Employer"
                   type="text"
@@ -152,7 +161,9 @@ export default function ApplyForm() {
                   required
                 />
               </Col>
-              <Col>
+            </Row>
+            <Row>
+              <Col xs={12} md={6}>
                 <Form.Floating>
                   <Form.Control
                     id="floatingPasswordCustom"
@@ -166,9 +177,7 @@ export default function ApplyForm() {
                   </label>
                 </Form.Floating>
               </Col>
-            </Row>
-            <Row>
-              <Col xs={12} md={6} className="margin-b">
+              <Col>
                 <Form.Control
                   placeholder="Employers Address"
                   type="text"
@@ -176,7 +185,9 @@ export default function ApplyForm() {
                   required
                 />
               </Col>
-              <Col>
+            </Row>
+            <Row>
+              <Col xs={12} md={6}>
                 <Form.Control
                   placeholder="Employers Telephone"
                   type="number"
@@ -184,13 +195,21 @@ export default function ApplyForm() {
                   required
                 />
               </Col>
-            </Row>
-            <Row>
-              <Col xs={12} md={6} className="margin-b">
+              <Col>
                 <Form.Control
                   placeholder="FullName of Next of Kin"
                   type="text"
                   name="Full Name of Next of Kin"
+                  required
+                />
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} md={6}>
+                <Form.Control
+                  placeholder="Next of Kin Telephone"
+                  type="number"
+                  name="Next of Kin Telephone"
                   required
                 />
               </Col>
@@ -204,15 +223,7 @@ export default function ApplyForm() {
               </Col>
             </Row>
             <Row>
-              <Col xs={12} md={6} className="margin-b">
-                <Form.Control
-                  placeholder="Next of Kin Telephone"
-                  type="number"
-                  name="Next of Kin Telephone"
-                  required
-                />
-              </Col>
-              <Col>
+              <Col xs={12} md={6}>
                 <Form.Control
                   placeholder="Next of Kin Email"
                   type="email"
@@ -220,13 +231,15 @@ export default function ApplyForm() {
                   required
                 />
               </Col>
+              <Col>
+                <Form.Control
+                  placeholder="Next of Kin Address"
+                  type="text"
+                  name="Next of Kin Address"
+                  required
+                />
+              </Col>
             </Row>
-            <Form.Control
-              placeholder="Next of Kin Address"
-              type="text"
-              name="Next of Kin Address"
-              required
-            />
             <Row>
               <Col xs={12} md={6}>
                 <Form.Group controlId="formFile" className="mb-3">
