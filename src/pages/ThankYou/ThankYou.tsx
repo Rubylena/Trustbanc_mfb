@@ -9,10 +9,6 @@ const ThankYou = () => {
           <h1>Thanks!</h1>
           <p>
             The form was submitted successfully.
-            {/* Return to the homepage:{" "} */}
-            {/* <Link className="links" to="/">
-              TrustBanc MicroFinance
-            </Link> */}
             <Link className="links" to="" onClick={() => history.back()}>
               Go back
             </Link>

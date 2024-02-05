@@ -1,302 +1,281 @@
-import { Button, Col, Container, Form, Row } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
-import Images from '../../assets/Images'
-import './landingRemainder.scss'
+import { Button, Col, Container, Form, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import Images from "../../assets/Images";
+import "./landingRemainder.scss";
 
 export const LandingRemainder = () => {
-    return (
-        <div>
-            <section className="financial-freedom">
-                <Container fluid
-                    style={{ background: "linear-gradient(90deg, #83460F 24.27%, #D07F31 79.51%)" }}
+  return (
+    <div>
+      <section>
+        <Container className="tw-bg-[#F5F5F7] mt-4 mt-md-5 mb-md-3 tw-rounded-lg px-md-5 py-md-3">
+          <Row className="tw-items-center tw-gap-14 md:tw-gap-0">
+            <Col className="col-12 col-md-6">
+              <div className="mb-4">
+                <h6 className="tw-font-bold">
+                  Are you in need of a quick loan?
+                </h6>
+                <p className="mb-2">
+                  Get flexible terms, competitive rates, and exceptional
+                  customer service.
+                </p>
+                <p className="mb-2">
+                  We strive to make your borrowing experience hassle-free and
+                  convenient.
+                </p>
+                <Button
+                  className="w-full md:tw-w-1/2 tw-w-full tw-bg-white tw-text-blue tw-border-blue tw-font-semibold"
+                  as="a"
+                  href="/contact"
                 >
-                    <Row className="gap-3 justify-content-between align-items-center call-us mx-4 py-4 ">
-                        <Col sm md={5} className="text-white">
-                            <h3>
-                                Are you in need of a quick loan? Get in touch with us today.
-                            </h3>
-                        </Col>
-                        <Col sm md={2} className="d-flex justify-content-end">
-                            <Button
-                                variant="light"
-                                className="d-flex gap-2 align-items-center justify-content-center fw-medium w-75"
-                            >
-                                <a href="quick-loans" className='tw-text-blue'>
-                                    <span>Apply now</span>
-                                </a>
-                            </Button>
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
+                  Contact us
+                </Button>
+              </div>
 
-            <section id="main-footer">
-                <Container fluid>
-                    <Row className="gap-3 py-5">
-                        <Col sm md={2}>
-                            <img
-                                src={Images.logo}
-                                alt="trustbanc logo"
-                                className="w-100"
-                                loading="lazy"
-                            />
-                        </Col>
-                        <Col sm md={9}>
-                            <Row>
-                                <Col>
-                                    <ul >
-                                        Features
-                                        {" "}
-                                        <li>
-                                            <a href="savings">Savings</a>
-                                        </li>
-                                        <li>
-                                            <a href="fixed-deposits">
-                                                Fixed Deposit
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <Link to="loan-calculator">
-                                                Loan Calculator
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <a href="primeApp">
-                                                Prime by TrustBanc
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="quick-loans">Quick Loans</a>
-                                        </li>
-                                        <li>
-                                            <a href="enterprise-loan">Enterprise Loan</a>
-                                        </li>
-                                        <li>
-                                            <a href="corporate-current">Corporate Current</a>
-                                        </li>
-                                    </ul>
-                                </Col>
-                                <Col>
-                                    <ul >
-                                        Company
-                                        {" "}
-                                        <li>
-                                            <a href="about">About us</a>
-                                        </li>
-                                        <li>
-                                            <a href="about/our-board">
-                                                Our Board
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <Link to="about/our-team">
-                                                Our Team
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <a href="about/vision&mission">
-                                                Vision & Mission
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </Col>
-                                <Col>
-                                    <ul >
-                                        Help
-                                        {" "}
-                                        <li>
-                                            <a href="contact">Contact us</a>
-                                        </li>
-                                    </ul>
-                                </Col>
-                                <Col>
-                                    <ul>
-                                        {" "}
-                                        Group and Subsidiaries
-                                        <li>
-                                            <a
-                                                href="https://trustbancgroup.com/"
-                                                target="_blank"
-                                                rel="noreferrer"
-                                            >
-                                                TrustBanc Holdings
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="https://trustbancasset.com/"
-                                                target="_blank"
-                                                rel="noreferrer"
-                                            >
-                                                TrustBanc Asset Management Limited
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="https://trustbanccapital.com/"
-                                                target="_blank"
-                                                rel="noreferrer"
-                                            >
-                                                TrustBanc Capital Management Limited
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="https://trustbancmfb.com/"
-                                                target="_blank"
-                                                rel="noreferrer"
-                                            >
-                                                TrustBanc MFB
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a
-                                                href="https://trustbancgroup.com/"
-                                                target="_blank"
-                                                rel="noreferrer"
-                                            >
-                                                WeFinance Solutions
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </Col>
-                            </Row>
-                        </Col>
-                        <hr />
-                    </Row>
-                </Container>
-            </section>
+              <div className="tw-bg-blue tw-rounded-lg tw-text-white p-2 pt-3">
+                <Form
+                  className="row m-0"
+                  action="https://formsubmit.co/support@trustbancgroup.com"
+                  method="POST"
+                >
+                  <h3 className="mb-2 tw-font-normal">Request a call back</h3>
+                  <div className="col-sm-6">
+                    <Form.Group className="mb-2" controlId="formBasicName">
+                      <Form.Label className="m-0">Your name</Form.Label>
+                      <Form.Control type="text" name="name" required />
+                    </Form.Group>
+                    {/* formsubmit.co */}
+                    <input type="hidden" name="_captcha" value="false"></input>
+                    {/* <input type="hidden" name="_cc" value="gordie2u@gmail.com" /> */}
+                    <input
+                      type="hidden"
+                      name="_next"
+                      value="https://trustbancmfb.com/thanks"
+                    ></input>
+                    <input
+                      type="hidden"
+                      name="_subject"
+                      value="New submission - MFB Request call back"
+                    ></input>
 
-            <section id="branches" className="mb-5">
-                <Container fluid>
-                    <Row className="gap-4 flex-wrap justify-content-sm-center">
-                        <Col className='col-12 col-sm-4'>
-                            <ul>
-                                HEAD OFFICE
-                                <li>
-                                    163, Sinari Daranijo Street, Off Ligali Ayorinde, Victoria
-                                    Island, Lagos, Nigeria.
-                                </li>
-                            </ul>
+                    <Form.Group className="mb-2" controlId="formBasicEmail">
+                      <Form.Label className="m-0">Your email</Form.Label>
+                      <Form.Control
+                        type="email"
+                        name="email"
+                        required
+                        className="mb-2"
+                      />
+                    </Form.Group>
 
-                            <ul>
-                                BRANCH OFFICE
-                                <li>
-                                    No 6, Brains and Hammers Estate, Apo 3, Ado Bayero, Abuja,
-                                    Nigeria
-                                </li>
-                            </ul>
+                    <Form.Group className="mb-2" controlId="formBasicSubject">
+                      <Form.Label className="m-0">Subject</Form.Label>
+                      <Form.Control
+                        type="text"
+                        name="subject"
+                        required
+                        className="mb-2"
+                      />
+                    </Form.Group>
+                  </div>
 
-                            <ul>
-                                CONTACT US
-                                <li>07004446147</li>
-                                <li>support@trustbancgroup.com</li>
-                                <li className="social-links z-[100000]">
-                                    <a href="tel:07004446147">
-                                        <img src={Images.tel} alt="telephone" />
-                                    </a>
-                                    <a
-                                        href="https://www.linkedin.com/company/70898742/admin/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BL6wam5krRz2uao0Sm7I3DA%3D%3D"
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        <img src={Images.linkedin} alt="linkedin" />
-                                    </a>
-                                    <a
-                                        href="https://www.facebook.com/trustbancfinancialgroup?mibextid=LQQJ4d"
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        <img src={Images.facebook} alt="facebook" />
-                                    </a>
-                                    <a
-                                        href="https://twitter.com/trustbancgroup?s=21&t=ZHjrl1jeMADQ2febfriVOw"
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        <img src={Images.twitter} alt="twitter" />
-                                    </a>
-                                    <a
-                                        href="https://instagram.com/trustbancfinancialgroup?igshid=YmMyMTA2M2Y="
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        <img src={Images.instagram} alt="instagram" />
-                                    </a>
-                                    <a href="mailto:support@trustbanc.com">
-                                        <img src={Images.mail} alt="mail" />
-                                    </a>
-                                </li>
-                            </ul>
-                        </Col>
-                        <Col className=" col-6 col-sm-3 tweet">
-                            <h5 className='mb-3'>RECENT TWEET</h5>
-                            <div>
-                                <a
-                                    className="twitter-timeline"
-                                    // data-width="360"
-                                    data-height="300"
-                                    href="https://twitter.com/TrustBancgroup?ref_src=twsrc%5Etfw"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    Tweets by TrustBancgroup
-                                </a>{" "}
-                            </div>
-                        </Col>
+                  <div className="col-sm-6">
+                    <Form.Group className="mb-2">
+                      <Form.Label className="m-0">Your message</Form.Label>
+                      <Form.Control
+                        style={{ resize: "none" }}
+                        as="textarea"
+                        name="message"
+                        rows={5}
+                        required
+                      />
+                    </Form.Group>
+                    <div className="d-flex flex-col gap-2 justify-content-end">
+                      <Button
+                        className="tw-w-full tw-bg-white tw-text-blue tw-border-blue tw-font-semibold"
+                        type="submit"
+                      >
+                        Submit
+                      </Button>
+                    </div>
+                  </div>
+                </Form>
+              </div>
+            </Col>
+            <Col className="col-12 col-md-6">
+              <img src={Images["contact-us"]} alt="contact us" />
+            </Col>
+          </Row>
+        </Container>
+      </section>
 
-                        <Col className="col-12 col-sm-4 subscribe-contact">
-                            <h5 className='mb-3'>SUBSCRIBE TO OUR NEWSLETTER</h5>
-                            <div>
-                                <Form
-                                    className="p-3"
-                                    action="https://formsubmit.co/support@trustbancgroup.com"
-                                    method="POST"
-                                >
-                                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                                        <Form.Label>Name</Form.Label>
-                                        <Form.Control type="text" name="name" required />
-                                    </Form.Group>
-                                    {/* formsubmit.co */}
-                                    <input type="hidden" name="_captcha" value="false"></input>
-                                    {/* <input type="hidden" name="_cc" value="gordie2u@gmail.com" /> */}
-                                    <input
-                                        type="hidden"
-                                        name="_next"
-                                        value="https://trustbancmfb.com/thanks"
-                                    ></input>
-                                    <input
-                                        type="hidden"
-                                        name="_subject"
-                                        value="New submission - MFB newsletter subscription"
-                                    ></input>
+      <section className="tw-bg-blue mb-3">
+        <Container>
+          <Row id="main-footer" className="py-5 tw-text-white">
+            <Col sm md={3}>
+              <img
+                src={Images.logoWhite}
+                alt="trustBanc logo"
+                className="w-100"
+                loading="lazy"
+              />
+              <ul className="p-0 mt-2">
+                HEAD OFFICE
+                <li className="tw-text-xs">
+                  163, Sinari Daranijo Street, Off Ligali Ayorinde, Victoria
+                  Island, Lagos, Nigeria.
+                </li>
+              </ul>
 
-                                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                                        <Form.Label>Email</Form.Label>
-                                        <Form.Control
-                                            type="email"
-                                            name="email"
-                                            required
-                                            className="mb-2"
-                                        />
-                                        <Form.Text className="text-muted">
-                                            By signing up, you agree to receive news, products offers
-                                            and other commercial messages delivered to your inbox. T&C
-                                            applies.
-                                        </Form.Text>
-                                    </Form.Group>
+              <ul className="p-0">
+                BRANCH OFFICE
+                <li className="tw-text-xs">
+                  No 6, Brains and Hammers Estate, Apo 3, Ado Bayero, Abuja,
+                  Nigeria
+                </li>
+              </ul>
 
-                                    <div className="d-flex flex-col gap-2 justify-content-end">
-                                        <Button className="tw-bg-blue tw-border-blue" type="submit">
-                                            Subscribe
-                                        </Button>
-                                    </div>
-                                </Form>
-                            </div>
-                        </Col>
-                    </Row>
-                </Container>
-            </section>
-        </div>
-    )
-}
+              <ul className="p-0">
+                CONTACT US
+                <li className="tw-text-xs">07004446147</li>
+                <li className="tw-text-xs">support@trustbancgroup.com</li>
+                <li className="social-links z-[100000]">
+                  <a href="tel:07004446147">
+                    <img src={Images.tel} alt="telephone" />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/70898742/admin/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BL6wam5krRz2uao0Sm7I3DA%3D%3D"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={Images.linkedin} alt="linkedin" />
+                  </a>
+                  <a
+                    href="https://www.facebook.com/trustbancfinancialgroup?mibextid=LQQJ4d"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={Images.facebook} alt="facebook" />
+                  </a>
+                  <a
+                    href="https://twitter.com/trustbancgroup?s=21&t=ZHjrl1jeMADQ2febfriVOw"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={Images.twitter} alt="twitter" />
+                  </a>
+                  <a
+                    href="https://instagram.com/trustbancfinancialgroup?igshid=YmMyMTA2M2Y="
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={Images.instagram} alt="instagram" />
+                  </a>
+                  <a href="mailto:support@trustbanc.com">
+                    <img src={Images.mail} alt="mail" />
+                  </a>
+                </li>
+              </ul>
+            </Col>
+            <Col sm md={9}>
+              <Row>
+                <Col>
+                  <ul className="p-0">
+                    Features{" "}
+                    <li>
+                      <a href="savings">Savings</a>
+                    </li>
+                    <li>
+                      <a href="fixed-deposits">Fixed Deposit</a>
+                    </li>
+                    <li>
+                      <Link to="loan-calculator">Loan Calculator</Link>
+                    </li>
+                    <li>
+                      <a href="primeApp">PrimeByTrustBanc</a>
+                    </li>
+                    <li>
+                      <a href="quick-loans">Quick Loans</a>
+                    </li>
+                    <li>
+                      <a href="enterprise-loan">Enterprise Loan</a>
+                    </li>
+                    <li>
+                      <a href="corporate-current">Corporate</a>
+                    </li>
+                  </ul>
+                </Col>
+                <Col>
+                  <ul className="p-0">
+                    Company{" "}
+                    <li>
+                      <a href="about">About us</a>
+                    </li>
+                    <li>
+                      <a href="about/our-board">Our Board</a>
+                    </li>
+                    <li>
+                      <Link to="about/our-team">Our Team</Link>
+                    </li>
+                    <li>
+                      <a href="about/vision&mission">Vision & Mission</a>
+                    </li>
+                  </ul>
+                </Col>
+                <Col>
+                  <ul className="p-0">
+                    Help{" "}
+                    <li>
+                      <a href="contact">Contact us</a>
+                    </li>
+                  </ul>
+                </Col>
+                <Col className="col-xl-4">
+                  <ul className="p-0">
+                    {" "}
+                    Subsidiaries
+                    <li>
+                      <a
+                        href="https://trustbancgroup.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        TrustBanc Holdings
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://trustbancasset.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        TrustBanc Asset Management Limited
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://trustbanccapital.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        TrustBanc Capital Management Limited
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.wefinanceng.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        WeFinance Solutions
+                      </a>
+                    </li>
+                  </ul>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+    </div>
+  );
+};
