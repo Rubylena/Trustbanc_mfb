@@ -24,15 +24,14 @@ export default function ApplyForm() {
             <input
               type="hidden"
               name="_subject"
-              value="NEW LOAN SUBMISSION - MFB"
+              value="NEW LOAN APPLICATION - MFB"
             />
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="_template" value="table" />
             <input
               type="hidden"
               name="_next"
-              value="https://localhost:5173/thanks"
-              // value="https://trustbancmfb.com/thanks"
+              value="https://trustbancmfb.com/thanks"
             />
             <Row className="row-gap-3">
               <Col xs={12} md={6}>
@@ -199,7 +198,7 @@ export default function ApplyForm() {
                 <Form.Control
                   placeholder="FullName of Next of Kin"
                   type="text"
-                  name="Full Name of Next of Kin"
+                  name="Name of Next of Kin"
                   required
                 />
               </Col>

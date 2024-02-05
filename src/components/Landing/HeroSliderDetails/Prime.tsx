@@ -26,7 +26,6 @@ export const Prime = () => {
           <div className="tw-flex tw-gap-2 flex-wrap tw-flex-row tw-text-left tw-text-white tw-cursor-pointer">
             <a
               href="https://apps.apple.com/gb/app/prime-by-trustbanc/id1552300596"
-              className="tw-text-white "
               target="_blank"
             >
               <div className="tw-bg-black tw-flex tw-gap-1 tw-items-center tw-rounded-lg tw-py-1 tw-px-2">
@@ -34,10 +33,10 @@ export const Prime = () => {
                   <img src={Icons.apple} alt="apple" />
                 </div>
                 <div className="tw-hidden sm:tw-block">
-                  <p className="tw-text-[0.5rem] md:tw-text-xs">
+                  <p className="tw-text-[0.5rem] md:tw-text-xs tw-text-white">
                     Download on the
                   </p>
-                  <p className="tw-text-xs sm:tw-text-sm md:tw-font-semibold">
+                  <p className="tw-text-xs sm:tw-text-sm md:tw-font-semibold tw-text-white">
                     App Store
                   </p>
                 </div>
@@ -46,7 +45,6 @@ export const Prime = () => {
 
             <a
               href="https://play.google.com/store/apps/details?id=com.cwg.trustbanc&pli=1"
-              className="tw-text-white "
               target="_blank"
             >
               <div className="tw-bg-black tw-flex tw-items-center tw-gap-1 tw-py-1 tw-px-2 tw-rounded-lg">
@@ -54,8 +52,10 @@ export const Prime = () => {
                   <img src={Icons.play} alt="play store" />
                 </div>
                 <div className="tw-hidden sm:tw-block">
-                  <p className="tw-text-[0.5rem] md:tw-text-xs">Get it on</p>
-                  <p className="tw-text-xs sm:tw-text-sm md:tw-font-semibold">
+                  <p className="tw-text-[0.5rem] md:tw-text-xs tw-text-white ">
+                    Get it on
+                  </p>
+                  <p className="tw-text-xs sm:tw-text-sm md:tw-font-semibold tw-text-white ">
                     Google Play
                   </p>
                 </div>

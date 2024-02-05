@@ -94,7 +94,7 @@ const Contact = () => {
               md={7}
               className="tw-bg-blue text-white p-4 contact-us-left"
             >
-              <h2> Send a message</h2>
+              <h2 className="mb-2"> Send a message</h2>
               <Form
                 action="https://formsubmit.co/support@trustbancgroup.comm"
                 method="POST"
@@ -130,7 +130,7 @@ const Contact = () => {
                     placeholder="Your message"
                     rows={7}
                     required
-                    name="body"
+                    name="message"
                   />
                 </Form.Group>
                 {/* formsubmit.co */}
@@ -145,22 +145,16 @@ const Contact = () => {
                   name="_next"
                   value="https://trustbanccmfb.com/thanks"
                 ></input>
-                {/* <input type="hidden" name="_cc" value="gordie2u@gmail.com" /> */}
 
                 <Button
                   variant="light"
                   type="submit"
                   className="w-25 text-dark-blue fw-medium"
-                  // onSubmit={() => {
-                  //   setModalShow(true);
-                  // }}
                 >
                   Send
                 </Button>
               </Form>
             </Col>
-
-            {/* <ContactModal show={modalShow} onHide={() => setModalShow(false)} /> */}
 
             <Col
               sm
@@ -178,7 +172,6 @@ const Contact = () => {
                 </Form.Group>
                 {/* formsubmit.co */}
                 <input type="hidden" name="_captcha" value="false"></input>
-                {/* <input type="hidden" name="_cc" value="gordie2u@gmail.com" /> */}
                 <input
                   type="hidden"
                   name="_next"
