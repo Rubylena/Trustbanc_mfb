@@ -204,15 +204,14 @@ export const About = () => {
                     <Accordion.Item eventKey="0">
                       <Accordion.Header>Our Vision</Accordion.Header>
                       <Accordion.Body>
-                        To become extremely relevant in the global financial
-                        services community.
+                        To be the preferred provider of seamless integrated
+                        financial solutions to our clients.
                       </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="1">
                       <Accordion.Header>Our Mission</Accordion.Header>
                       <Accordion.Body>
-                        To reduce global poverty to the lowest possible minimium
-                        through financial empowerment.
+                        Your lifetime companion for sustainable wealth.
                       </Accordion.Body>
                     </Accordion.Item>
                   </Accordion>
@@ -224,36 +223,9 @@ export const About = () => {
                   </p>
                   <Accordion>
                     <Accordion.Item eventKey="2">
-                      <Accordion.Header>Honesty</Accordion.Header>
+                      <Accordion.Header>E.A.S.E</Accordion.Header>
                       <Accordion.Body>
-                        As our name implies we cultivate ethics of the highest
-                        known standard; transparency, probity and respect in all
-                        we do.
-                      </Accordion.Body>
-                    </Accordion.Item>
-                    <Accordion.Item eventKey="3">
-                      <Accordion.Header>Customer Service</Accordion.Header>
-                      <Accordion.Body>
-                        We always work towards identifying what our clients want
-                        and we deliver to them just the way they want it.
-                      </Accordion.Body>
-                    </Accordion.Item>
-                    <Accordion.Item eventKey="4">
-                      <Accordion.Header>Action</Accordion.Header>
-                      <Accordion.Body>
-                        We recognize that action speaks louder than voice
-                        therefore, our creative team are determined to create
-                        new products and services to add unrivaled values to our
-                        stakeholders.
-                      </Accordion.Body>
-                    </Accordion.Item>
-                    <Accordion.Item eventKey="5">
-                      <Accordion.Header>Manpower Development</Accordion.Header>
-                      <Accordion.Body>
-                        We organize seminars and training to educate our clients
-                        and the prospective ones on the best ways to manage
-                        their businesses, finance and resources which in turn
-                        help to liberate them.
+                        Empathy, Accountability, Service, Ethics.
                       </Accordion.Body>
                     </Accordion.Item>
                   </Accordion>
