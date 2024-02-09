@@ -10,10 +10,15 @@
   border-radius: 5px;
 }
 
-
 .boxes p:first-child {
   color: #044188;
   font-weight: 600;
   font-size: 1.6rem;
   margin: 0 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .boxes p:first-child {
+    font-size: 1rem;
+  }
 }

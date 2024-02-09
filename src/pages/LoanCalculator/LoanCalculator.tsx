@@ -36,8 +36,8 @@ const LoanCalculator = () => {
       <div className="calculator-card pt-5">
         <h1>Loan Calculator</h1>
       </div>
-      <Link to="/quick-loans">
-        <p className="tw-underline tw-text-blue tw-p-2 tw-pl-5 tw-font-medium tw-w-fit">
+      <Link to="/quick-loans" className="tw-mt-24 tw-w-fit">
+        <p className="tw-underline tw-text-blue tw-p-2 tw-pl-5 tw-font-medium">
           {" "}
           &lArr; Quick loans
         </p>

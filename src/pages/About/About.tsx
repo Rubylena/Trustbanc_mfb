@@ -1,5 +1,5 @@
 import { Accordion, Col, Row } from "react-bootstrap";
-import Images, { Icons } from "../../assets/Images";
+import Images from "../../assets/Images";
 import "./about.scss";
 import { useParams } from "react-router-dom";
 
@@ -15,7 +15,7 @@ export const About = () => {
         </p>
       </div>
       <div className="tw-p-8 md:tw-p-14">
-        <section>
+        <section className="mb-5">
           <p className="tw-text-justify tw-leading-7">
             TrustBanc J6 Microfinance Bank Limited (TMFB) is a Limited Liability
             Company duly registered under the Laws of the Federal Republic of
@@ -31,7 +31,7 @@ export const About = () => {
             quality-laden and value-added services to the hitherto the banked
             and unbanked segment of the company.
           </p>
-
+          {/* 
           <h2 className="tw-text-2xl md:tw-text-5xl tw-text-blue tw-my-5 tw-font-semibold tw-text-center">
             We are glad to share some milestones
           </h2>
@@ -64,27 +64,27 @@ export const About = () => {
               </h4>
               <p className="tw-font-semibold">Awards</p>
             </div>
-          </div>
+          </div> */}
         </section>
         <Accordion defaultActiveKey={param.tab}>
           <Accordion.Item eventKey="our-board">
             <Accordion.Header>Our Board</Accordion.Header>
             <Accordion.Body>
               <Row className="tw-flex-wrap tw-gap-8 tw-justify-center">
-                <Col className="boxes col-3">
+                <Col className="boxes col-12 col-md-3">
                   <div>
                     <img
-                      src={Images.folashade}
+                      src={Images.chairman}
                       alt="profile"
                       className="w-100"
                     />
                   </div>
                   <div>
-                    <p>Folashade Jimoh</p>
-                    <p>Chairman</p>
+                    <p>Abubakar Jimoh</p>
+                    <p>Non Executive</p>
                   </div>
                 </Col>
-                <Col className="boxes col-3">
+                <Col className="boxes col-12 col-md-3">
                   <div>
                     <img src={Images.olu} alt="profile" className="w-100" />
                   </div>
@@ -93,35 +93,35 @@ export const About = () => {
                     <p>MD/CEO</p>
                   </div>
                 </Col>
-                <Col className="boxes col-3">
+                <Col className="boxes col-12 col-md-3">
+                  <div>
+                    <img src={Images.Ademola} alt="profile" className="w-100" />
+                  </div>
+                  <div>
+                    <p>Ademola Adeleke</p>
+                    <p>Non Executive</p>
+                  </div>
+                </Col>
+                <Col className="boxes col-12 col-md-3">
                   <div>
                     <img
-                      src={Images.mustapha}
+                      src={Images.cornelia}
                       alt="profile"
                       className="w-100"
                     />
                   </div>
                   <div>
-                    <p>A. U. Mustapha (SAN)</p>
-                    <p>Member</p>
+                    <p>Cornelia Utuk</p>
+                    <p>Non Executive</p>
                   </div>
                 </Col>
-                <Col className="boxes col-3">
+                <Col className="boxes col-12 col-md-3">
                   <div>
-                    <img src={Images.olawuyi} alt="profile" className="w-100" />
+                    <img src={Images.korode} alt="profile" className="w-100" />
                   </div>
                   <div>
-                    <p>Olawuyi Sulaimon</p>
-                    <p>Member</p>
-                  </div>
-                </Col>
-                <Col className="boxes col-3">
-                  <div>
-                    <img src={Images.mubarak} alt="profile" className="w-100" />
-                  </div>
-                  <div>
-                    <p>Mubarak Saidu</p>
-                    <p>Member</p>
+                    <p>Korede Dada</p>
+                    <p>Non Executive</p>
                   </div>
                 </Col>
               </Row>
@@ -131,7 +131,7 @@ export const About = () => {
             <Accordion.Header>Our Team</Accordion.Header>
             <Accordion.Body>
               <Row className="tw-flex-wrap tw-gap-8 tw-justify-center">
-                <Col className="boxes col-3">
+                <Col className="boxes col-12 col-md-3">
                   <div>
                     <img src={Images.olu} alt="profile" className="w-100" />
                   </div>
@@ -140,16 +140,17 @@ export const About = () => {
                     <p>Managing Director</p>
                   </div>
                 </Col>
-                <Col className="boxes col-3">
+
+                <Col className="boxes col-12 col-md-3">
                   <div>
-                    <img src={Images.Ademola} alt="profile" className="w-100" />
+                    <img src={Images.wumi} alt="profile" className="w-100" />
                   </div>
                   <div>
-                    <p>Ademola Adeleke</p>
-                    <p>Chief Technical Officer</p>
+                    <p>Olawunmi Bethel-Omoniyi</p>
+                    <p>Head, Compliance</p>
                   </div>
                 </Col>
-                <Col className="boxes col-3">
+                <Col className="boxes col-12 col-md-3">
                   <div>
                     <img src={Images.Abiola} alt="profile" className="w-100" />
                   </div>
@@ -158,7 +159,7 @@ export const About = () => {
                     <p>Head, Operations</p>
                   </div>
                 </Col>
-                <Col className="boxes col-3">
+                <Col className="boxes col-12 col-md-3">
                   <div>
                     <img src={Images.Adeola} alt="profile" className="w-100" />
                   </div>
@@ -167,26 +168,31 @@ export const About = () => {
                     <p>Head, Risk & Credit</p>
                   </div>
                 </Col>
-                <Col className="boxes col-3">
-                  <div>
-                    <img
-                      src={Images.Akinseye}
-                      alt="profile"
-                      className="w-100"
-                    />
-                  </div>
-                  <div>
-                    <p>Akinseye Apara</p>
-                    <p>Company Secretary/Legal Adviser</p>
-                  </div>
-                </Col>
-                <Col className="boxes col-3">
+                <Col className="boxes col-12 col-md-3">
                   <div>
                     <img src={Images.peter} alt="profile" className="w-100" />
                   </div>
                   <div>
                     <p>Peter Olatunji</p>
                     <p>Head, IT</p>
+                  </div>
+                </Col>
+                <Col className="boxes col-12 col-md-3">
+                  <div>
+                    <img src={Images.olabisi} alt="profile" className="w-100" />
+                  </div>
+                  <div>
+                    <p>Olabisi Edward</p>
+                    <p>Head, Customer Engagement</p>
+                  </div>
+                </Col>
+                <Col className="boxes col-12 col-md-3">
+                  <div>
+                    <img src={Images.olabisi} alt="profile" className="w-100" />
+                  </div>
+                  <div>
+                    <p>Samuel Oladejo</p>
+                    <p>Head, Financial Control</p>
                   </div>
                 </Col>
               </Row>

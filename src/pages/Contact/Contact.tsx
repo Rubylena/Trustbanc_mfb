@@ -1,8 +1,12 @@
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import Images, { Icons } from "../../assets/Images";
 import "./contact.scss";
+import { useState } from "react";
 
 const Contact = () => {
+  const [submitting, setSubmitting] = useState(false);
+  const [subscribe, setSubscribe] = useState(false);
+
   return (
     <div className="contact-us tw-mt-16 md:tw-mt-24 tw-px-8 tw-pb-8 md:tw-px-14 md:tw-pb-14">
       <Container className="social-links d-flex justify-content-end pb-3 pt-3 px-0">
@@ -96,8 +100,11 @@ const Contact = () => {
             >
               <h2 className="mb-2"> Send a message</h2>
               <Form
-                action="https://formsubmit.co/support@trustbancgroup.comm"
+                action="https://formsubmit.co/support@trustbancgroup.com"
                 method="POST"
+                onSubmit={() => {
+                  setSubmitting(true);
+                }}
               >
                 <Form.Group className="mb-3">
                   <Form.Control
@@ -143,15 +150,17 @@ const Contact = () => {
                 <input
                   type="hidden"
                   name="_next"
-                  value="https://trustbanccmfb.com/thanks"
+                  value="http://localhost:5173/thanks"
+                  // value="https://trustbanccmfb.com/thanks"
                 ></input>
 
                 <Button
                   variant="light"
                   type="submit"
                   className="w-25 text-dark-blue fw-medium"
+                  disabled={submitting}
                 >
-                  Send
+                  {submitting ? "Submitting..." : "Send"}
                 </Button>
               </Form>
             </Col>
@@ -165,6 +174,9 @@ const Contact = () => {
                 className="p-3"
                 action="https://formsubmit.co/support@trustbancgroup.com"
                 method="POST"
+                onSubmit={() => {
+                  setSubscribe(true);
+                }}
               >
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                   <Form.Label>Name</Form.Label>
@@ -175,7 +187,8 @@ const Contact = () => {
                 <input
                   type="hidden"
                   name="_next"
-                  value="https://trustbanccmfb.com/thanks"
+                  value="http://localhost:5173/thanks"
+                  // value="https://trustbanccmfb.com/thanks"
                 ></input>
                 <input
                   type="hidden"
@@ -199,8 +212,12 @@ const Contact = () => {
                 </Form.Group>
 
                 <div className="d-flex flex-col justify-content-end">
-                  <Button type="submit" className="tw-bg-blue tw-border-blue">
-                    Subscribe
+                  <Button
+                    type="submit"
+                    className="tw-bg-blue tw-border-blue"
+                    disabled={subscribe}
+                  >
+                    {subscribe ? "Submitting" : "Subscribe"}
                   </Button>
                 </div>
               </Form>

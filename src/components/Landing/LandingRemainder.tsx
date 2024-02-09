@@ -2,8 +2,11 @@ import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Images from "../../assets/Images";
 import "./landingRemainder.scss";
+import { useState } from "react";
 
 export const LandingRemainder = () => {
+  const [submitting, setSubmitting] = useState(false);
+
   return (
     <div>
       <section>
@@ -34,34 +37,40 @@ export const LandingRemainder = () => {
               <div className="tw-bg-blue tw-rounded-lg tw-text-white p-2 pt-3">
                 <Form
                   className="row m-0"
-                  action="https://formsubmit.co/support@trustbancgroup.com"
+                  action="https://formsubmit.co/graceffiong@gmail.com"
+                  // action="https://formsubmit.co/support@trustbancgroup.com"
                   method="POST"
+                  onSubmit={() => {
+                    setSubmitting(true);
+                  }}
                 >
                   <h3 className="mb-2 tw-font-normal">Request a call back</h3>
                   <div className="col-sm-6">
                     <Form.Group className="mb-2" controlId="formBasicName">
                       <Form.Label className="m-0">Your name</Form.Label>
-                      <Form.Control type="text" name="name" required />
+                      <Form.Control type="text" name="Name" required />
                     </Form.Group>
                     {/* formsubmit.co */}
-                    <input type="hidden" name="_captcha" value="false"></input>
+                    <input type="hidden" name="_captcha" value="false" />
                     {/* <input type="hidden" name="_cc" value="gordie2u@gmail.com" /> */}
                     <input
                       type="hidden"
                       name="_next"
-                      value="https://trustbancmfb.com/thanks"
-                    ></input>
+                      value="http://localhost:5173/thanks"
+                      // value="https://trustbancmfb.com/thanks"
+                    />
                     <input
                       type="hidden"
                       name="_subject"
-                      value="New submission - MFB Request call back"
-                    ></input>
+                      value="New online submission - Customer request call back"
+                    />
+                    <input type="hidden" name="_template" value="box" />
 
                     <Form.Group className="mb-2" controlId="formBasicEmail">
                       <Form.Label className="m-0">Your email</Form.Label>
                       <Form.Control
                         type="email"
-                        name="email"
+                        name="Email"
                         required
                         className="mb-2"
                       />
@@ -71,7 +80,7 @@ export const LandingRemainder = () => {
                       <Form.Label className="m-0">Subject</Form.Label>
                       <Form.Control
                         type="text"
-                        name="subject"
+                        name="Subject"
                         required
                         className="mb-2"
                       />
@@ -84,7 +93,7 @@ export const LandingRemainder = () => {
                       <Form.Control
                         style={{ resize: "none" }}
                         as="textarea"
-                        name="message"
+                        name="Message"
                         rows={5}
                         required
                       />
@@ -93,8 +102,9 @@ export const LandingRemainder = () => {
                       <Button
                         className="tw-w-full tw-bg-white tw-text-blue tw-border-blue tw-font-semibold"
                         type="submit"
+                        disabled={submitting}
                       >
-                        Submit
+                        {submitting ? "Submitting..." : "Submit"}
                       </Button>
                     </div>
                   </div>
@@ -118,19 +128,10 @@ export const LandingRemainder = () => {
                 className="w-100"
                 loading="lazy"
               />
-              <ul className="p-0 mt-2">
-                HEAD OFFICE
+              <ul className="p-0 mt-4">
                 <li className="tw-text-xs">
                   163, Sinari Daranijo Street, Off Ligali Ayorinde, Victoria
                   Island, Lagos, Nigeria.
-                </li>
-              </ul>
-
-              <ul className="p-0">
-                BRANCH OFFICE
-                <li className="tw-text-xs">
-                  No 6, Brains and Hammers Estate, Apo 3, Ado Bayero, Abuja,
-                  Nigeria
                 </li>
               </ul>
 
