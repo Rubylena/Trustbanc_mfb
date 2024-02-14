@@ -33,7 +33,7 @@ const Images = {
   mail: new URL("./icons/mail.svg", import.meta.url).href,
 
   olu: new URL("./images/olushola.png", import.meta.url).href,
- chairman: new URL("./images/chairman.jpg", import.meta.url).href,
+  chairman: new URL("./images/chairman.jpg", import.meta.url).href,
   cornelia: new URL("./images/cornelia.svg", import.meta.url).href,
   korode: new URL("./images/korode.png", import.meta.url).href,
   wumi: new URL("./images/Wumi.png", import.meta.url).href,
@@ -43,6 +43,7 @@ const Images = {
   Adeola: new URL("./images/Adeola.svg", import.meta.url).href,
   Akinseye: new URL("./images/Akinseye.png", import.meta.url).href,
   peter: new URL("./images/peter.png", import.meta.url).href,
+  samuel: new URL("./images/Samuel.jpeg", import.meta.url).href,
 
   about: new URL("./images/about.png", import.meta.url).href,
   contact: new URL("./images/contact.png", import.meta.url).href,
