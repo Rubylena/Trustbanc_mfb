@@ -21,14 +21,13 @@ const QuickLoans = () => {
             <button className="tw-text-xs tw-rounded-md tw-py-2.5 tw-px-3 md:tw-text-sm tw-font-semibold tw-bg-[#F5F5F7]">
               <a
                 href="/loan-calculator"
-                target="_blank"
                 className="tw-text-blue "
               >
                 Loan Calculator
               </a>
             </button>
             <button className="tw-bg-blue tw-rounded-md tw-py-2.5 tw-px-2 tw-text-xs md:tw-text-sm tw-font-semibold">
-              <a href="/apply" target="_blank" className="tw-text-white">
+              <a href="/apply" className="tw-text-white">
                 Apply Now
               </a>
             </button>

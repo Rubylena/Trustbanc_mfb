@@ -25,6 +25,7 @@ export default function ComboBox() {
 
   return (
     <Combobox as="div" value={selectedBank} onChange={setSelectedBank}>
+      <Combobox.Label className="block text-sm font-medium leading-6 text-gray-900">Salary Bank Account</Combobox.Label>
       <div className="tw-relative">
         <Combobox.Input
           className="tw-w-full tw-rounded-md tw-border-0 tw-bg-white tw-py-1.5 tw-pl-3 tw-pr-10 tw-text-gray-900 tw-shadow-sm tw-ring-0 tw-outline-0 focus:tw-ring-0 sm:tw-text-sm sm:tw-leading-6"
