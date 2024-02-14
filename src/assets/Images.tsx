@@ -43,7 +43,7 @@ const Images = {
   Adeola: new URL("./images/Adeola.svg", import.meta.url).href,
   Akinseye: new URL("./images/Akinseye.png", import.meta.url).href,
   peter: new URL("./images/peter.png", import.meta.url).href,
-  samuel: new URL("./images/Samuel.jpeg", import.meta.url).href,
+  samuel: new URL("./images/Samuel.svg", import.meta.url).href,
 
   about: new URL("./images/about.png", import.meta.url).href,
   contact: new URL("./images/contact.png", import.meta.url).href,

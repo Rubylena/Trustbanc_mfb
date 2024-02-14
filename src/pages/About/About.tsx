@@ -187,8 +187,8 @@ export const About = () => {
                   </div>
                 </Col>
                 <Col className="boxes col-12 col-md-3">
-                  <div className="tw-w-[300px] tw-h-[302.08px]">
-                    <img src={Images.samuel} alt="profile" className="w-100 h-100 tw-object-cover" />
+                  <div>
+                    <img src={Images.samuel} alt="profile" className="w-100" />
                   </div>
                   <div>
                     <p>Samuel Oladejo</p>
