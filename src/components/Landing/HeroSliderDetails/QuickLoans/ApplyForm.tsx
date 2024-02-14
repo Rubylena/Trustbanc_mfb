@@ -21,8 +21,7 @@ export default function ApplyForm() {
       </Link>
       <div className="tw-flex tw-mb-24 tw-ml-4 tw-mr-4 md:tw-ml-14 md:tw-mr-0 tw-h-full ">
         <Form
-          // action="https://formsubmit.co/support@trustbancgroup.com"
-          action="https://formsubmit.co/graceffiong@gmail.com"
+          action="https://formsubmit.co/support@trustbancgroup.com"
           method="POST"
           encType="multipart/form-data"
           className="col-12 col-md-8 tw-bg-blue tw-rounded-lg tw-text-white tw-p-4 md:tw-p-10 quick-loans"
@@ -51,7 +50,7 @@ export default function ApplyForm() {
                 <input
                   type="hidden"
                   name="_next"
-                  value="http://localhost:5173/thanks"
+                  value="https://trustbancmfb.netlify.app/thanks"
                   // value="https://trustbancmfb.com/thanks"
                 />
               </Col>

@@ -37,8 +37,7 @@ export const LandingRemainder = () => {
               <div className="tw-bg-blue tw-rounded-lg tw-text-white p-2 pt-3">
                 <Form
                   className="row m-0"
-                  action="https://formsubmit.co/graceffiong@gmail.com"
-                  // action="https://formsubmit.co/support@trustbancgroup.com"
+                  action="https://formsubmit.co/support@trustbancgroup.com"
                   method="POST"
                   onSubmit={() => {
                     setSubmitting(true);
@@ -56,7 +55,7 @@ export const LandingRemainder = () => {
                     <input
                       type="hidden"
                       name="_next"
-                      value="http://localhost:5173/thanks"
+                      value="https://trustbancmfb.netlify.app/thanks"
                       // value="https://trustbancmfb.com/thanks"
                     />
                     <input

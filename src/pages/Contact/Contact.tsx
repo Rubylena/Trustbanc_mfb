@@ -150,7 +150,7 @@ const Contact = () => {
                 <input
                   type="hidden"
                   name="_next"
-                  value="http://localhost:5173/thanks"
+                  value="https://trustbancmfb.netlify.app/thanks"
                   // value="https://trustbanccmfb.com/thanks"
                 ></input>
 
@@ -187,7 +187,7 @@ const Contact = () => {
                 <input
                   type="hidden"
                   name="_next"
-                  value="http://localhost:5173/thanks"
+                  value="https://trustbancmfb.netlify.app/thanks"
                   // value="https://trustbanccmfb.com/thanks"
                 ></input>
                 <input
