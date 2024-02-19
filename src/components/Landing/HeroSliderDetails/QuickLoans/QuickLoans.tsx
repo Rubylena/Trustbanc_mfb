@@ -19,16 +19,22 @@ const QuickLoans = () => {
           </p>
           <div className=" tw-flex tw-flex-row-reverse tw-flex-wrap tw-justify-end tw-items-center tw-gap-5 tw-mt-5">
             <button className="tw-text-xs tw-rounded-md tw-py-2.5 tw-px-3 md:tw-text-sm tw-font-semibold tw-bg-[#F5F5F7]">
-              <a
-                href="/loan-calculator"
-                className="tw-text-blue "
-              >
+              <a href="/loan-calculator" className="tw-text-blue ">
                 Loan Calculator
               </a>
             </button>
             <button className="tw-bg-blue tw-rounded-md tw-py-2.5 tw-px-2 tw-text-xs md:tw-text-sm tw-font-semibold">
               <a href="/apply" className="tw-text-white">
                 Apply Now
+              </a>
+            </button>
+            <button className="tw-text-xs tw-rounded-md tw-py-2.5 tw-px-3 md:tw-text-sm tw-font-semibold tw-bg-[#F5F5F7]">
+              <a
+                href="https://trustbancmfb.com/onboarding%20form.pdf"
+                target="_blank"
+                className="tw-text-blue "
+              >
+                Download form
               </a>
             </button>
           </div>

@@ -55,8 +55,8 @@ export const LandingRemainder = () => {
                     <input
                       type="hidden"
                       name="_next"
-                      value="https://trustbancmfb.netlify.app/thanks"
-                      // value="https://trustbancmfb.com/thanks"
+                      // value="https://trustbancmfb.netlify.app/thanks"
+                      value="https://trustbancmfb.com/thanks"
                     />
                     <input
                       type="hidden"

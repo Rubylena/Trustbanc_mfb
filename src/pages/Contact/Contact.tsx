@@ -150,8 +150,8 @@ const Contact = () => {
                 <input
                   type="hidden"
                   name="_next"
-                  value="https://trustbancmfb.netlify.app/thanks"
-                  // value="https://trustbanccmfb.com/thanks"
+                  // value="https://trustbancmfb.netlify.app/thanks"
+                  value="https://trustbanccmfb.com/thanks"
                 ></input>
 
                 <Button
@@ -187,8 +187,8 @@ const Contact = () => {
                 <input
                   type="hidden"
                   name="_next"
-                  value="https://trustbancmfb.netlify.app/thanks"
-                  // value="https://trustbanccmfb.com/thanks"
+                  // value="https://trustbancmfb.netlify.app/thanks"
+                  value="https://trustbanccmfb.com/thanks"
                 ></input>
                 <input
                   type="hidden"

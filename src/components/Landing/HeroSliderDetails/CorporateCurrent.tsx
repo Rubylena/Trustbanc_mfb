@@ -21,8 +21,9 @@ export const CorporateCurrent = () => {
             Open a TrustBanc MfB current account with full and gain access to
             the world of convenience
           </p>
+          
           <div className=" tw-flex tw-flex-row-reverse tw-flex-wrap tw-justify-end tw-items-center tw-gap-5">
-            <button className="tw-text-xs tw-rounded-md tw-py-2.5 tw-px-3 md:tw-text-sm tw-font-semibold tw-bg-[#F5F5F7]">
+            {/* <button className="tw-text-xs tw-rounded-md tw-py-2.5 tw-px-3 md:tw-text-sm tw-font-semibold tw-bg-[#F5F5F7]">
               <a
                 href="https://trustbancmfb.com/onboarding%20form.pdf"
                 target="_blank"
@@ -30,14 +31,14 @@ export const CorporateCurrent = () => {
               >
                 Download form
               </a>
-            </button>
+            </button> */}
             <button className="tw-bg-blue tw-rounded-md tw-py-2.5 tw-px-2 tw-text-xs md:tw-text-sm tw-font-semibold">
               <a
-                href="https://app.trustbancgroup.com/accounts/login/"
+                href="https://trustbancmfb.com/mfb-corporate-form.pdf"
                 target="_blank"
                 className="tw-text-white"
               >
-                Open account online
+                Download form
               </a>
             </button>
           </div>

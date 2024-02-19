@@ -183,6 +183,13 @@ export default function Header() {
             </Transition>
           </Popover>
 
+          <a
+            href="https://trustbancmfb.com/blog/"
+            className="tw-block tw-text-gray-900 tw-text-sm tw-font-medium tw-leading-6"
+          >
+            Blog
+          </a>
+
           <div className="tw-bg-blue tw-text-center py-2 px-3 tw-rounded-lg tw-flex tw-items-center tw-justify-center gap-2">
             <div>
               <img src={Icons.onlineBanking} alt="online banking" />
@@ -316,6 +323,16 @@ export default function Header() {
                       </Disclosure.Panel>
                     </>
                   )}
+                </Disclosure>
+
+                <Disclosure as="div" className="-tw-mx-3">
+                  <Disclosure.Button
+                    as="a"
+                    href="https://trustbancmfb.com/blog/"
+                    className="tw-flex tw-w-full tw-items-center tw-justify-between tw-rounded-lg tw-py-2 tw-pl-3 tw-pr-3.5 tw-text-base tw-font-medium tw-leading-7 tw-text-gray-900 hover:tw-bg-gray-50"
+                  >
+                    Blog
+                  </Disclosure.Button>
                 </Disclosure>
 
                 <div className="tw-bg-blue tw-text-center py-2 tw-rounded-lg tw-flex tw-items-center tw-justify-center gap-2">
