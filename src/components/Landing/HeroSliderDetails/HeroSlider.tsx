@@ -8,15 +8,14 @@ const HeroSlider = () => {
     <Carousel
       interval={3000}
       data-bs-theme="dark"
-      className="tw-pt-14 slider_background "
+      className="tw-pt-14 slider_background"
       prevIcon={
-        <div className="tw-bg-blue p-1 tw-rounded ">
+        <div className="tw-bg-blue p-1 tw-rounded">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
             viewBox="0 0 24 24"
-            fill="none"
           >
             <path
               d="M19 12H5"
@@ -62,7 +61,7 @@ const HeroSlider = () => {
         </div>
       }
     >
-      <Carousel.Item className="tw-mt-5 md:tw-mt-24 tw-px-6 md:tw-px-24 tw-h-[13rem] sm:tw-h-auto">
+      <Carousel.Item className="tw-mt-5 md:tw-mt-24 tw-pl-12 tw-pr-6 md:tw-pr-24 md:tw-pl-28 xl:tw-pl-44 2xl:tw-pl-60 tw-h-[13rem] sm:tw-h-auto">
         <Row className="tw-items-center tw-flex-row-reverse md:px-4">
           <Col className="col-md-5 p-0 md:tw-h-[400px] lg:tw-h-[480px] tw-flex">
             <img
@@ -88,16 +87,16 @@ const HeroSlider = () => {
           </Col>
         </Row>
       </Carousel.Item>
-      <Carousel.Item className="tw-mt-5 md:tw-mt-24 tw-px-6 md:tw-px-24 tw-h-[13rem] sm:tw-h-auto">
+      <Carousel.Item className="tw-mt-5 md:tw-mt-24 tw-pl-12 tw-pr-6 md:tw-pr-24 md:tw-pl-28 xl:tw-pl-44 2xl:tw-pl-60 tw-h-[13rem] sm:tw-h-auto">
         <Row className="tw-items-center tw-flex-row-reverse md:px-4">
-          <Col className="col-md-5 p-0 md:tw-h-[400px] lg:tw-h-[480px] tw-flex">
+          <Col className="col-lg-5 p-0 md:tw-h-[400px] lg:tw-h-[480px] tw-flex">
             <img
               src={Images.prime}
               alt="prime app"
               className="tw-w-full tw-h-full tw-object-contain"
             />
           </Col>
-          <Col className="col-8 col-md-7 tw-flex tw-flex-col tw-gap-2 sm:tw-gap-5 tw-p-0 sm:tw-pl-10">
+          <Col className="col-9 col-lg-7 tw-flex tw-flex-col tw-gap-2 sm:tw-gap-5 tw-p-0 sm:tw-pl-10">
             <h3 className="tw-text-blue tw-font-semibold tw-text-sm sm:tw-text-3xl md:tw-text-5xl">
               Digital banking services that suits you and your lifestyle
             </h3>
@@ -169,7 +168,7 @@ const HeroSlider = () => {
           </Col>
         </Row>
       </Carousel.Item>
-      <Carousel.Item className="tw-mt-5 md:tw-mt-24 tw-px-6 md:tw-px-24 tw-h-[13rem] sm:tw-h-auto">
+      <Carousel.Item className="tw-mt-5 md:tw-mt-24 tw-pl-12 tw-pr-6 md:tw-pr-24 md:tw-pl-28 xl:tw-pl-44 2xl:tw-pl-60 tw-h-[13rem] sm:tw-h-auto">
         <Row className="tw-items-center tw-flex-row-reverse md:px-4">
           <Col className="col-md-5 p-0 md:tw-h-[400px] lg:tw-h-[480px] tw-flex">
             <img
@@ -195,7 +194,7 @@ const HeroSlider = () => {
           </Col>
         </Row>
       </Carousel.Item>
-      <Carousel.Item className="tw-mt-5 md:tw-mt-24 tw-px-6 md:tw-px-24 tw-h-[13rem] sm:tw-h-auto">
+      <Carousel.Item className="tw-mt-5 md:tw-mt-24 tw-pl-12 tw-pr-6 md:tw-pr-24 md:tw-pl-28 xl:tw-pl-44 2xl:tw-pl-60 tw-h-[13rem] sm:tw-h-auto">
         <Row className="tw-items-center tw-flex-row-reverse md:px-4">
           <Col className="col-md-5 p-0 md:tw-h-[400px] lg:tw-h-[480px] tw-flex">
             <img
@@ -220,7 +219,7 @@ const HeroSlider = () => {
           </Col>
         </Row>
       </Carousel.Item>
-      <Carousel.Item className="tw-mt-5 md:tw-mt-24 tw-px-6 md:tw-px-24 tw-h-[13rem] sm:tw-h-auto">
+      <Carousel.Item className="tw-mt-5 md:tw-mt-24 tw-pl-12 tw-pr-6 md:tw-pr-24 md:tw-pl-28 xl:tw-pl-44 2xl:tw-pl-60 tw-h-[13rem] sm:tw-h-auto">
         <Row className="tw-items-center tw-flex-row-reverse md:px-4">
           <Col className="col-md-5 p-0 md:tw-h-[400px] lg:tw-h-[480px] tw-flex">
             <img
@@ -247,7 +246,7 @@ const HeroSlider = () => {
           </Col>
         </Row>
       </Carousel.Item>
-      <Carousel.Item className="tw-mt-5 md:tw-mt-24 tw-px-6 md:tw-px-24 tw-h-[13rem] sm:tw-h-auto">
+      <Carousel.Item className="tw-mt-5 md:tw-mt-24 tw-pl-12 tw-pr-6 md:tw-pr-24 md:tw-pl-28 xl:tw-pl-44 2xl:tw-pl-60 tw-h-[13rem] sm:tw-h-auto">
         <Row className="tw-items-center tw-flex-row-reverse md:px-4">
           <Col className="col-md-5 p-0 md:tw-h-[400px] lg:tw-h-[480px] tw-flex">
             <img

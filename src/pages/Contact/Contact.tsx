@@ -100,7 +100,7 @@ const Contact = () => {
             >
               <h2 className="mb-2"> Send a message</h2>
               <Form
-                action="https://formsubmit.co/support@trustbancgroup.com"
+                action="https://formsubmit.co/68f4d64d3be2ed91884420c1d14b36be"
                 method="POST"
                 onSubmit={() => {
                   setSubmitting(true);
@@ -151,7 +151,7 @@ const Contact = () => {
                   type="hidden"
                   name="_next"
                   // value="https://trustbancmfb.netlify.app/thanks"
-                  value="https://trustbanccmfb.com/thanks"
+                  value="https://trustbancmfb.com/thanks"
                 ></input>
 
                 <Button
@@ -172,7 +172,7 @@ const Contact = () => {
             >
               <Form
                 className="p-3"
-                action="https://formsubmit.co/support@trustbancgroup.com"
+                action="https://formsubmit.co/68f4d64d3be2ed91884420c1d14b36be"
                 method="POST"
                 onSubmit={() => {
                   setSubscribe(true);
@@ -187,8 +187,7 @@ const Contact = () => {
                 <input
                   type="hidden"
                   name="_next"
-                  // value="https://trustbancmfb.netlify.app/thanks"
-                  value="https://trustbanccmfb.com/thanks"
+                  value="https://trustbancmfb.com/thanks"
                 ></input>
                 <input
                   type="hidden"
