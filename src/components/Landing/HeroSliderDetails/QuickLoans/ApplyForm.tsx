@@ -143,8 +143,14 @@ export default function ApplyForm() {
                 <Form.Label className="m-0">Loan Amount</Form.Label>
                 <Form.Control
                   placeholder="Loan Amount(NGN)"
-                  type="number"
+                  type="text"
                   name="Loan Amount"
+                  onKeyDown={(e: React.KeyboardEvent<HTMLInputElement>) => {
+                    const isValidInput = /^[0-9\b]+$/.test(e.key);
+                    if (!isValidInput) {
+                      e.preventDefault();
+                    }
+                  }}
                   required
                 />
               </Col>
