@@ -36,11 +36,14 @@ export default function Header() {
         className="tw-flex tw-items-center tw-justify-between tw-p-3 lg:tw-px-8 lg:tw-py-4"
         aria-label="Global"
       >
-        <div className="tw-flex lg:tw-flex-1">
+        <div className="tw-flex tw-flex-col lg:tw-flex-1">
           <a href="/" className="-tw-m-1.5 tw-p-1.5">
             <span className="tw-sr-only">TrustBanc MFB</span>
             <img className="tw-h-8 tw-w-auto" src={Images.logo} alt="logo" />
           </a>
+          <span className="tw-text-sm tw-bg-gradient-to-r tw-from-[#d07f31] tw-to-[#83460f] tw-bg-clip-text tw-text-transparent">
+            Licensed by CBN
+          </span>
         </div>
         <div className="tw-flex lg:tw-hidden">
           <button

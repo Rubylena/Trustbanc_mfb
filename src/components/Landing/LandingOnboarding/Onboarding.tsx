@@ -2,8 +2,6 @@ import { Col, Row } from "react-bootstrap";
 import Images from "../../../assets/Images";
 import "./onboarding.scss";
 
-// const slides = [Images["step1-1"], Images["step1-2"], Images.step2, Images.step3, Images.step4]
-
 export const Onboarding = () => {
   return (
     <>
