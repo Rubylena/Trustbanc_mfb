@@ -20,11 +20,10 @@ export const FixedDeposits = () => {
           Investing money is the process of committing resources in a strategic
           way to accomplish a specific objective at TrustBanc we have attractive
           investment vehicles which have been made easy, convenient and risk
-          free for your funds. You can invest your Naira in either Fixed or Call
-          Deposits or a tailored investment products.
+          free for your funds. You can invest your Naira in our Fixed deposits or a tailored investment product.
         </p>
 
-        {/* <div className=" tw-flex tw-flex-row-reverse tw-flex-wrap tw-justify-end tw-items-center tw-gap-5 tw-mt-5">
+        <div className=" tw-flex tw-flex-row-reverse tw-flex-wrap tw-justify-end tw-items-center tw-gap-5 tw-mt-5">
           <button className="tw-text-xs tw-rounded-md tw-py-2.5 tw-px-3 md:tw-text-sm tw-font-semibold tw-bg-[#F5F5F7]">
             <a
               href="https://trustbancmfb.com/onboarding%20form.pdf"
@@ -43,7 +42,7 @@ export const FixedDeposits = () => {
               Open account online
             </a>
           </button>
-        </div> */}
+        </div>
       </Col>
     </Row>
   );

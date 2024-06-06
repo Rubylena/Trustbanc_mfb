@@ -113,17 +113,45 @@ export default function ApplyForm() {
                 />
               </Col>
             </Row>
+
             <Row className="row-gap-3">
               <Col xs={12} md={6}>
                 <Form.Label className="m-0">BVN</Form.Label>
                 <Form.Control
                   placeholder="Your BVN"
-                  type="number"
+                  type="text"
+                  inputMode="numeric"
+                  onKeyDown={(e: React.KeyboardEvent<HTMLInputElement>) => {
+                    if (
+                      e.key === "Backspace" ||
+                      e.key === "Delete" ||
+                      e.key === "ArrowLeft" ||
+                      e.key === "ArrowRight"
+                    )
+                      return;
+                    if (!/[0-9]/.test(e.key)) {
+                      e.preventDefault();
+                    }
+                  }}
+                  onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+                    const value = e.target.value;
+                    if (value.length > 11) {
+                      e.target.value = value.slice(0, 11);
+                    }
+                  }}
+                  onInvalid={(e: React.InvalidEvent<HTMLInputElement>) => {
+                    if (e.target.value.length !== 11) {
+                      e.target.setCustomValidity(
+                        "BVN or NIN must be exactly 11 numbers only."
+                      );
+                    } else {
+                      e.target.setCustomValidity("");
+                    }
+                  }}
+                  maxLength={11}
+                  pattern="[0-9]{11}"
                   name="BVN"
                   required
-                  onInput={(e: React.ChangeEvent<HTMLInputElement>) => {
-                    e.target.value = e.target.value.toString().slice(0, 11);
-                  }}
                 />
               </Col>
               <Col>
@@ -133,6 +161,21 @@ export default function ApplyForm() {
                   name="IPPIS/Service Number"
                   required
                 />
+              </Col>
+            </Row>
+
+            <Row>
+              <Col xs={12} md={6}>
+                <Form.Floating className="m-0">
+                  <Form.Control
+                    id="floatingPasswordCustom"
+                    type="date"
+                    placeholder="Date of Birth"
+                    name="Date of Birth"
+                    required
+                  />
+                  <label htmlFor="floatingPasswordCustom">Date of Birth</label>
+                </Form.Floating>
               </Col>
             </Row>
           </Stack>

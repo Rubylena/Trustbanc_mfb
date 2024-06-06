@@ -182,7 +182,7 @@ const HeroSlider = () => {
               Automate your savings and earn more
             </h3>
             <p className="tw-text-xs sm:tw-text-sm md:tw-text-md">
-              Invest your Naira in either Fixed or Call Deposits just for you
+              Invest your Naira in Fixed Deposits just for you
               and your lifestyle.
             </p>
             <Link
@@ -223,7 +223,7 @@ const HeroSlider = () => {
         <Row className="tw-items-center tw-flex-row-reverse md:px-4">
           <Col className="col-md-5 p-0 md:tw-h-[400px] lg:tw-h-[480px] tw-flex">
             <img
-              src={Images["corporate-current"]}
+              src={Images.onboarding}
               alt="swift loan"
               className="tw-w-full tw-h-full tw-object-contain"
             />

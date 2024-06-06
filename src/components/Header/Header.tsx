@@ -65,7 +65,7 @@ export default function Header() {
 
           <Popover className="tw-relative">
             <Popover.Button className="tw-flex tw-items-center tw-gap-x-1 tw-text-sm tw-font-medium tw-leading-6 tw-text-gray-900 tw-border-0 tw-ring-0 focus:tw-outline-0">
-              Features
+              Products
               <ChevronDownIcon
                 className="tw-h-5 tw-w-5 tw-flex-none tw-text-gray-400"
                 aria-hidden="true"
@@ -188,6 +188,7 @@ export default function Header() {
 
           <a
             href="https://trustbancmfb.com/blog/"
+            target="_blank"
             className="tw-block tw-text-gray-900 tw-text-sm tw-font-medium tw-leading-6"
           >
             Blog
@@ -245,7 +246,7 @@ export default function Header() {
                   {({ open }) => (
                     <>
                       <Disclosure.Button className="tw-flex tw-w-full tw-items-center tw-justify-between tw-rounded-lg tw-py-2 tw-pl-3 tw-pr-3.5 tw-text-base tw-font-medium tw-leading-7 tw-text-gray-900 hover:tw-bg-gray-50">
-                        Features
+                        Products
                         <ChevronDownIcon
                           className={classNames(
                             open ? "tw-rotate-180" : "",
@@ -331,6 +332,7 @@ export default function Header() {
                 <Disclosure as="div" className="-tw-mx-3">
                   <Disclosure.Button
                     as="a"
+                    target="_blank"
                     href="https://trustbancmfb.com/blog/"
                     className="tw-flex tw-w-full tw-items-center tw-justify-between tw-rounded-lg tw-py-2 tw-pl-3 tw-pr-3.5 tw-text-base tw-font-medium tw-leading-7 tw-text-gray-900 hover:tw-bg-gray-50"
                   >
